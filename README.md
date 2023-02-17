@@ -1,2 +1,1 @@
-# SVG_Benchmarking
-Benchmarking methods for identification of spatially variable genes
+# Benchmarking methods for identification of spatially variable genes
