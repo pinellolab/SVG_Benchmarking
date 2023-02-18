@@ -15,7 +15,7 @@ Spatially resolved transcriptomics enables the profiling of gene expression in c
 | SOMDE   | Self-organizing map | Python   | Normalized |  Bioinformatics |  2021 |
 | BOOST-GP   | Bayesian hierarchical model | R   | Count |  Bioinformatics |  2021 |
 | SpatialDE2 | Poisson Hidden Markov Random field | Python   | Count |  bioRxiv |  2021 |
-| GPcounts   | Gaussian process regression | Python   | Count | Bioinformatics |  2022 |
 | sepal   | diffusion model | Python   | Count | Bioinformatics |  2021 |
+| GPcounts   | Gaussian process regression | Python   | Count | Bioinformatics |  2022 |
 | CTSV   | Zero-inflated negative binomial regression | R   | Count |  Bioinformatics |  2022 |
 | scGCO   | Hidden Markov Random Fields | Python   | Count | Nature communications |  2022 |
