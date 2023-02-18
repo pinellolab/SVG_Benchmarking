@@ -1,11 +1,9 @@
 ## Benchmarking methods for identification of spatially variable genes
 
-Spatially resolved transcriptomics allows for profiling gene expression of cells while preserving their spatial context, adding a new axis to the data. One key challenge of analyzing such data is to identify spatially variable genes. Several methods have been developed for this task based on different assumptions.
-
-
+Spatially resolved transcriptomics enables the profiling of gene expression in cells while maintaining their spatial context, thereby introducing a new dimension to the data. A crucial aspect of analyzing this type of data involves identifying genes that vary in expression across space. To achieve this, various methods have been devised, each based on different assumptions.
 
 ### Methods
 
-| Name      | Language | Data       | Publication     | Year  |
-| ---       | ---      | ---        | -----------     |-------|
-| SpatialDE | Python   | Normalized |  Nature Methods |  2018 |
+| Name      | Model | Language | Data       | Publication     | Year  |
+| ---       | ---| ---      | ---        | -----------     |-------|
+| SpatialDE | Gaussian process regression| Python   | Normalized |  Nature Methods |  2018 |
