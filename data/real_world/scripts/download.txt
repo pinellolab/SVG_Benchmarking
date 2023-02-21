@@ -1,0 +1,12 @@
+Downloading Stereo-seq_wang2022high_L3_b_count_normal_stereoseq_data_whole.h5ad...
+
+Downloading Stereo-seq_wang2022high_E14-16h_a_count_normal_stereoseq_data_whole.h5ad...
+
+Traceback (most recent call last):
+  File "download.py", line 21, in <module>
+    wget.download(url=f"{BASE_URL}/{i+1}", out=f"../{protocol}")
+  File "/home/rs619065/miniconda3/envs/r-4.1/lib/python3.8/site-packages/wget.py", line 526, in download
+    (tmpfile, headers) = ulib.urlretrieve(binurl, tmpfile, callback)
+  File "/home/rs619065/miniconda3/envs/r-4.1/lib/python3.8/urllib/request.py", line 286, in urlretrieve
+    raise ContentTooShortError(
+urllib.error.ContentTooShortError: <urlopen error retrieval incomplete: got only 870301696 out of 973238242 bytes>
