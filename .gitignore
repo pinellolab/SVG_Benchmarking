@@ -3,3 +3,4 @@ data/simulation/*.csv
 data/simulation/*.rds
 methods
 */*/.ipynb_checkpoints/
+data/simulation/reference_10x/
