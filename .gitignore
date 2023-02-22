@@ -1,6 +1,5 @@
 data/real_world/*/*.h5ad
-data/simulation/*.csv
-data/simulation/*.rds
+data/simulation/10x/*.csv
 methods
 */*/.ipynb_checkpoints/
-data/simulation/reference_10x/
+data/simulation/10X/reference/
