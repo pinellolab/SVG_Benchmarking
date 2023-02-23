@@ -28,3 +28,7 @@ We aim to address following question
 | CTSV   | Zero-inflated negative binomial regression | R   | Count |  [Bioinformatics](https://academic.oup.com/bioinformatics/article/38/17/4135/6632658) |  2022 |
 | scGCO   | Hidden Markov Random Fields | Python   | Count | [Nature communications](https://www.nature.com/articles/s41467-022-33182-3) |  2022 |
 | nnSVG   | nearest-neighbor Gaussian processes | R   | Count | [bioRxiv](https://www.biorxiv.org/content/10.1101/2022.05.16.492124v1.full) |  2022 |
+
+## Review paper
+[Computational elucidation of spatial gene expression variation from spatially resolved transcriptomics data](https://www.sciencedirect.com/science/article/pii/S2162253121003127)
+
