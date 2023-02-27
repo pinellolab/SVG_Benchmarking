@@ -30,7 +30,6 @@ We aim to address following question
 | nnSVG   | nearest-neighbor Gaussian processes | R   | Count | [bioRxiv](https://www.biorxiv.org/content/10.1101/2022.05.16.492124v1.full) |  2022 |
 | Spvnae   | Spatial Neighborhood Variably Expressed Genes | R   | Count | [bioRxiv](https://www.biorxiv.org/content/10.1101/2023.02.08.527623v1.abstract) |  2023 |
 
-
 ## Review paper
 [Computational elucidation of spatial gene expression variation from spatially resolved transcriptomics data](https://www.sciencedirect.com/science/article/pii/S2162253121003127)
 
