@@ -34,7 +34,7 @@ def main():
     nres = som.norm()
 
     result, SVnum = som.run()
-    result = result.loc[adata.var_names, ]
+    # result = result.loc[adata.var_names, ]
     result.to_csv(args.output)
 
 if __name__ == "__main__":
