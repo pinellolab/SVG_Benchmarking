@@ -12,9 +12,9 @@ We aim to address following question
 
 ### Methods
 
-| Name      | Model                      | Language | Data       | Publication     | Year  |
-| ---       | ---                        | ---      | ---        | -----------     |-------|
-| Moran’s I | Spatial Autocorrelation    | Python   | Normalized |  [Biometrika](https://academic.oup.com/biomet/article/37/1-2/17/194868) |  1950 |
+| Name      | Model                      | Language | Data       | Publication     | Year  | Input | Output | Experimental techniques| 
+| ---       | ---                        | ---      | ---        | -----------     |-------| ------| -------| ----------------------- |
+| Moran’s I | Spatial Autocorrelation    | Python   | Normalized |  [Biometrika](https://academic.oup.com/biomet/article/37/1-2/17/194868) |  1950 | 
 | SpatialDE | Gaussian process regression| Python   | Normalized |  [Nature Methods](https://www.nature.com/articles/nmeth.4636) |  2018 |
 | Trendsceek   | Marked point processes | R   | Normalized |  [Nature Methods](https://www.nature.com/articles/nmeth.4634) |  2018 |
 | SPARK     | Generalized spatial linear models | R   | Count |  [Nature Methods](https://www.nature.com/articles/s41592-019-0701-7) |  2020 |
