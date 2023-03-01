@@ -13,7 +13,7 @@ We aim to address following question
 ### Methods
 
 | Name      | Model                      | Language | Data       | Publication     | Year  | Additional input | Output | Experimental techniques| Tested by | Documentation |
-| ---       | ---                        | ---      | ---        | -----------     |-------| ------| -------| ----------------------- |---------|
+| ---       | ---                        | ---      | ---        | -----------     |-------| -----------------| -------| -----------------------|-----------|---------------|
 | Moran’s I | Spatial Autocorrelation    | Python   | Normalized |  [Biometrika](https://academic.oup.com/biomet/article/37/1-2/17/194868) |  1950 | None | Spatial autocorrelation | Any | Zhijian| |
 | SpatialDE | Gaussian process regression| Python   | Normalized |  [Nature Methods](https://www.nature.com/articles/nmeth.4636) |  2018 |  | | | | |
 | Trendsceek| Marked point processes | R   | Normalized |  [Nature Methods](https://www.nature.com/articles/nmeth.4634) |  2018 |  None | P-value | | Zhijian | |
