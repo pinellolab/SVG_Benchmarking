@@ -13,7 +13,7 @@ We aim to address following question
 ### Methods
 
 | Name      | Spatial model | Language | Input       | Publication     | Year| Output | Experimental techniques| Tested by | Documentation | Managed repositories | Usability|
-| ---       | ---                        | ---      | ---        | -----------     |-------| -----------------| -------| -----------------------|-----------|---------------| ---------------------|----------|
+| ---       | ---                        | ---      | ---        | -----------     |-------| -----------------| -------| -----------------------|-----------|---------------| ---------------------|
 | Moran’s I | SN    | Python   | Normalized |  [Biometrika](https://academic.oup.com/biomet/article/37/1-2/17/194868) |  1950 | Correlation | Any | Zhijian| | | |
 | SpatialDE | GP | R & Python   | Normalized |  [Nature Methods](https://www.nature.com/articles/nmeth.4636) |  2018 | | | Zain | | ||
 | Trendsceek| Marked point processes | R   | Normalized |  [Nature Methods](https://www.nature.com/articles/nmeth.4634) |  2018  | P-value | | Zhijian | | ||
