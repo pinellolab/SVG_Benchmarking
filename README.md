@@ -14,7 +14,7 @@ We aim to address following question
 
 | Name      | Model                      | Language | Data       | Publication     | Year  | Additional input | Output | Experimental techniques| Tested by | Documentation | Managed repositories | Usability|
 | ---       | ---                        | ---      | ---        | -----------     |-------| -----------------| -------| -----------------------|-----------|---------------| ---------------------|----------|
-| Moran’s I | SA    | Python   | Normalized |  [Biometrika](https://academic.oup.com/biomet/article/37/1-2/17/194868) |  1950 | None | Spatial autocorrelation | Any | Zhijian| | | | 
+| Moran’s I | SA    | Python   | Normalized |  [Biometrika](https://academic.oup.com/biomet/article/37/1-2/17/194868) |  1950 | None | Correlation | Any | Zhijian| | | | 
 | SpatialDE | GP regression| R & Python   | Normalized |  [Nature Methods](https://www.nature.com/articles/nmeth.4636) |  2018 | None | | | | | || 
 | Trendsceek| Marked point processes | R   | Normalized |  [Nature Methods](https://www.nature.com/articles/nmeth.4634) |  2018 |  None | P-value | | Zhijian | | || 
 | SPARK     | GLSM | R   | Count |  [Nature Methods](https://www.nature.com/articles/s41592-019-0701-7) |  2020 | None | P-value | |Zhijian | *** | None | | 
