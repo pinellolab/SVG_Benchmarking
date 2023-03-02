@@ -29,6 +29,8 @@ We aim to address following question
 | scGCO     | HMRF | Python   | Count | [Nature communications](https://www.nature.com/articles/s41467-022-33182-3) |  2022 | None | | | Zhijian | | || 
 | nnSVG     | Nearest-neighbor GP | R   | Count | [bioRxiv](https://www.biorxiv.org/content/10.1101/2022.05.16.492124v1.full) |  2022 | None  | | | | | || 
 | Spvnae    | Spatial Neighborhood Variably Expressed Genes | R   | Count | [bioRxiv](https://www.biorxiv.org/content/10.1101/2023.02.08.527623v1.abstract) |  2023 | None | | | | | || 
+| GraphST   | Graph self-supervised contrastive learning | Python   | Count | https://www.nature.com/articles/s41467-023-36796-3 |  2023 | None | | | | | || 
+
 
 SA, Spatial autocorrelation; GP, Gaussion process; GLSM; Generalized spatial linear models; 
 GCN, Graph convolutional network; SOM, Self-organizing map; ZINB, Zero-inflated negative binomial; 
