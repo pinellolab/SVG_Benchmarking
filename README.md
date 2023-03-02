@@ -19,7 +19,7 @@ We aim to address following question
 | Trendsceek| Marked point processes | R   | Normalized |  [Nature Methods](https://www.nature.com/articles/nmeth.4634) |  2018 |  None | P-value | | Zhijian | | || 
 | SPARK     | GLSM | R   | Count |  [Nature Methods](https://www.nature.com/articles/s41592-019-0701-7) |  2020 | None | P-value | |Zhijian | *** | None | | 
 | SPARK-X   | Non-parametric spatial modeling | R   | Count |  [Genome Biology](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02404-0) |  2021 | None | | | | | || 
-| SpaGCN    | GCN | Python   | Normalized |  [Nature Methods](https://www.nature.com/articles/s41592-021-01255-8) |  2021 | Histology | | | | | || 
+| SpaGCN    | GCN | Python   | Normalized |  [Nature Methods](https://www.nature.com/articles/s41592-021-01255-8) |  2021 | Histology | | | Zain | | || 
 | SOMDE     | SOM | Python   | Normalized |  [Bioinformatics](https://academic.oup.com/bioinformatics/article/37/23/4392/6308937) |  2021 |None | | | Zhijian | | PyPi ||  
 | BOOST-GP  | ZINB mixture model | R   | Count |  [Bioinformatics](https://academic.oup.com/bioinformatics/article/37/22/4129/6306406) |  2021 | None | | | | | || 
 | SpatialDE2| Poisson HMRF | Python   | Count |  [bioRxiv](https://www.biorxiv.org/content/10.1101/2021.10.27.466045v2) |  2021 | None | | | | | || 
