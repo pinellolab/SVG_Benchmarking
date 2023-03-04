@@ -43,3 +43,5 @@ GCN, Graph convolutional network; SOM, Self-organizing map; ZINB, Zero-inflated 
 ### Review paper
 [Computational elucidation of spatial gene expression variation from spatially resolved transcriptomics data](https://www.sciencedirect.com/science/article/pii/S2162253121003127)
 
+### Benchmarking paper
+[https://www.biorxiv.org/content/10.1101/2022.11.23.517747v1](https://www.biorxiv.org/content/10.1101/2022.11.23.517747v1)
