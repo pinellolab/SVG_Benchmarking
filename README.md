@@ -47,3 +47,12 @@ GCN, Graph convolutional network; SOM, Self-organizing map; ZINB, Zero-inflated 
 
 ### Benchmarking paper
 [Evaluating spatially variable gene detection methods for spatial transcriptomics data](https://www.biorxiv.org/content/10.1101/2022.11.23.517747v1)
+
+* 7 methods were benchmarked (Giotto KM, Giotto rank, Moran's I, nnSVG, SOMDE, SPARK-K, SpatialDE)
+* Concordance among SVG detection methods
+* Dependency of SVG statistics on gene expression levels and across genes
+* Accuracy in detecting SVGs based on simulation data
+* Performance on clustering spatial domains
+* Computational time and memory usage
+
+
