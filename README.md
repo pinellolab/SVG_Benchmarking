@@ -24,7 +24,7 @@ We aim to address following question
 | SpaGCN    | Graph | Python   | Normalized |  [Nature Methods](https://www.nature.com/articles/s41592-021-01255-8) |  2021 | P-value| Zain | | ||
 | SpatialDE2| GP | Python   | Count |  [bioRxiv](https://www.biorxiv.org/content/10.1101/2021.10.27.466045v2) |  2021  | P-value| | | ||
 | sepal | Graph | Python   | Count | [Bioinformatics](https://academic.oup.com/bioinformatics/article/37/17/2644/6168120?login=false) |  2021 | | Zain | | ||
-| GPcounts  | GP | Python   | Count | [Bioinformatics](https://academic.oup.com/bioinformatics/article/37/21/3788/6313161) |  2022 | P-value | | | ||
+| GPcounts  | GP | Python   | Count | [Bioinformatics](https://academic.oup.com/bioinformatics/article/37/21/3788/6313161) |  2022 | P-value | | | Zain ||
 | nnSVG     | GP | R | Count | [bioRxiv](https://www.biorxiv.org/content/10.1101/2022.05.16.492124v1.full) |  2022  | P-value| | | ||
 | scGCO     | Graph | Python   | Count | [Nature communications](https://www.nature.com/articles/s41467-022-33182-3) |  2022 | FDR | Zhijian | | ||
 | GraphST   | Graph | Python   | Count | [Nature communications](https://www.nature.com/articles/s41467-023-36796-3) |  2023 | | | | ||
