@@ -8,3 +8,4 @@ data/simulation/10X/.ipynb_checkpoints/
 benchmarking/utils/.vscode
 data/simulation/reference/
 data/simulation/simulated/
+*/.ipynb_checkpoints/
