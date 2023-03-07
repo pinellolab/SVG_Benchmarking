@@ -14,5 +14,5 @@
 source ~/.bashrc
 conda activate r-4.1
 
-jupyter nbconvert --to html --execute ./01_simulation_10x.ipynb --output-dir ./viz
+jupyter nbconvert --to html --execute ./01_scGCO_simulate_SVGs.ipynb --output-dir ./viz
 
