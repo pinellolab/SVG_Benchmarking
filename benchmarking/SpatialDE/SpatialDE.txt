@@ -1,2 +1,2 @@
 [NbConvertApp] Converting notebook ./01_SpatialDE_simulate_SVGs.ipynb to html
-[NbConvertApp] Writing 1620511 bytes to viz/01_SpatialDE_simulate_SVGs.html
+[NbConvertApp] Writing 1620767 bytes to viz/01_SpatialDE_simulate_SVGs.html
