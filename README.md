@@ -16,19 +16,19 @@ We aim to address following question
 | ---       | ---                        | ---      | ---        | -----------     |-------| -----------------| -----------------------|-----------|---------------| ---------------------|
 | Moran’s I | SN    | Python   | Normalized |  [Biometrika](https://academic.oup.com/biomet/article/37/1-2/17/194868) |  1950 | Correlation | Zhijian| *** | Github & Pypi| |
 | SpatialDE | GP | R & Python   | Normalized |  [Nature Methods](https://www.nature.com/articles/nmeth.4636) |  2018 | P-value| Zain |***| Github ||
-| Trendsceek| SN | R   | Normalized |  [Nature Methods](https://www.nature.com/articles/nmeth.4634) |  2018  | P-value | Zhijian | *** | Github ||
+| Trendsceek| SN | R   | Normalized |  [Nature Methods](https://www.nature.com/articles/nmeth.4634) |  2018  | P-value | Zhijian (Out-of-date) | *** | Github ||
 | SPARK     | GP | R   | Count |  [Nature Methods](https://www.nature.com/articles/s41592-019-0701-7) |  2020 | P-value |Zhijian | *** | Github | |
-| BOOST-GP  | GP | R   | Count |  [Bioinformatics](https://academic.oup.com/bioinformatics/article/37/22/4129/6306406) |  2021 | P-value || | Github ||
+| BOOST-GP  | GP | R   | Count |  [Bioinformatics](https://academic.oup.com/bioinformatics/article/37/22/4129/6306406) |  2021 | P-value |Zhijian| | Github ||
 | SOMDE     | GP | Python   | Normalized |  [Bioinformatics](https://academic.oup.com/bioinformatics/article/37/23/4392/6308937) |  2021 | P-value| Zhijian | | Github&PyPi ||
-| SPARK-X   | GP | R   | Count |  [Genome Biology](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02404-0) |  2021  | P-value| | | Github||
+| SPARK-X   | GP | R   | Count |  [Genome Biology](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02404-0) |  2021  | P-value|Zhijian |  | Github||
 | SpaGCN    | Graph | Python   | Normalized |  [Nature Methods](https://www.nature.com/articles/s41592-021-01255-8) |  2021 | P-value| Zain | | ||
 | SpatialDE2| GP | Python   | Count |  [bioRxiv](https://www.biorxiv.org/content/10.1101/2021.10.27.466045v2) |  2021  | P-value| | | ||
 | sepal | Graph | Python   | Count | [Bioinformatics](https://academic.oup.com/bioinformatics/article/37/17/2644/6168120?login=false) |  2021 | | Zain | | ||
 | GPcounts  | GP | Python   | Count | [Bioinformatics](https://academic.oup.com/bioinformatics/article/37/21/3788/6313161) |  2022 | P-value | Zain | | ||
-| nnSVG     | GP | R | Count | [bioRxiv](https://www.biorxiv.org/content/10.1101/2022.05.16.492124v1.full) |  2022  | P-value| | | ||
+| nnSVG     | GP | R | Count | [bioRxiv](https://www.biorxiv.org/content/10.1101/2022.05.16.492124v1.full) |  2022  | P-value| Zhijian | | ||
 | scGCO     | Graph | Python   | Count | [Nature communications](https://www.nature.com/articles/s41467-022-33182-3) |  2022 | FDR | Zhijian | | ||
 | GraphST   | Graph | Python   | Count | [Nature communications](https://www.nature.com/articles/s41467-023-36796-3) |  2023 | | | | ||
-| Spvnae    | SN | R   | Count | [bioRxiv](https://www.biorxiv.org/content/10.1101/2023.02.08.527623v1.abstract) |  2023 | | || ||
+| Spvnae    | SN | R   | Count | [bioRxiv](https://www.biorxiv.org/content/10.1101/2023.02.08.527623v1.abstract) |  2023 |P-value| Zhijian || ||
 
 
 SN, Spatial neighborhood; GP, Gaussion process; GLSM; Generalized spatial linear models; 
