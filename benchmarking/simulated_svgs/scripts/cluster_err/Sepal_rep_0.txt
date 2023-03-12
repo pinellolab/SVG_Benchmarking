@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/data/scATA/SingleCellOpenChromatin/local/ongoing/SVG_Benchmarking/benchmarking/utils/run_Sepal.py", line 7, in <module>
+    import sepal
+ModuleNotFoundError: No module named 'sepal'
+
+real	0m0.732s
+user	0m0.566s
+sys	0m0.176s

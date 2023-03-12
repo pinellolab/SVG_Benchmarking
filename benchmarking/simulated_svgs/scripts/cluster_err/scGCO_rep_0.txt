@@ -1,0 +1,14 @@
+/home/rs619065/miniconda3/envs/svg/lib/python3.9/site-packages/pysal/model/spvcm/abstracts.py:10: UserWarning: The `dill` module is required to use the sqlite backend fully.
+  from .sqlite import head_to_sql, start_sql
+/home/rs619065/miniconda3/envs/svg/lib/python3.9/site-packages/sklearn/mixture/_base.py:116: ConvergenceWarning: Number of distinct clusters (2) found smaller than n_clusters (3). Possibly due to duplicate points in X.
+  cluster.KMeans(
+/home/rs619065/miniconda3/envs/svg/lib/python3.9/site-packages/sklearn/mixture/_base.py:116: ConvergenceWarning: Number of distinct clusters (2) found smaller than n_clusters (4). Possibly due to duplicate points in X.
+  cluster.KMeans(
+  0%|          | 0/64 [00:00<?, ?it/s]  2%|▏         | 1/64 [00:23<24:44, 23.56s/it]  5%|▍         | 3/64 [00:25<07:00,  6.89s/it]  8%|▊         | 5/64 [00:28<03:54,  3.98s/it] 11%|█         | 7/64 [00:30<02:35,  2.72s/it] 17%|█▋        | 11/64 [00:32<01:20,  1.51s/it] 19%|█▉        | 12/64 [00:34<01:25,  1.65s/it] 22%|██▏       | 14/64 [00:36<01:12,  1.44s/it] 25%|██▌       | 16/64 [00:38<01:02,  1.31s/it] 30%|██▉       | 19/64 [00:40<00:47,  1.05s/it] 34%|███▍      | 22/64 [00:42<00:38,  1.10it/s] 39%|███▉      | 25/64 [00:44<00:32,  1.21it/s] 42%|████▏     | 27/64 [00:46<00:32,  1.15it/s] 48%|████▊     | 31/64 [00:48<00:23,  1.39it/s] 55%|█████▍    | 35/64 [00:50<00:18,  1.57it/s] 62%|██████▎   | 40/64 [00:52<00:13,  1.84it/s] 80%|███████▉  | 51/64 [00:54<00:04,  2.92it/s] 83%|████████▎ | 53/64 [00:56<00:04,  2.35it/s]100%|██████████| 64/64 [00:57<00:00,  3.74it/s]100%|██████████| 64/64 [00:57<00:00,  1.11it/s]
+/data/scATA/SingleCellOpenChromatin/local/ongoing/SVG_Benchmarking/benchmarking/utils/run_scGCO.py:39: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  df["spatially_variable"] = adata.var.spatially_variable.astype(np.int).values
+
+real	1m22.416s
+user	2m15.671s
+sys	0m10.826s
