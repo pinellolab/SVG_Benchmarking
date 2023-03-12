@@ -1,0 +1,4 @@
+[NbConvertApp] Converting notebook ./01_simulate_svgs.ipynb to html
+[NbConvertApp] Writing 22735611 bytes to viz/01_simulate_svgs.html
+[NbConvertApp] Converting notebook ./02_simulate_refs.ipynb to html
+[NbConvertApp] Writing 3890546 bytes to viz/02_simulate_refs.html
