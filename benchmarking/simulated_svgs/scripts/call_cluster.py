@@ -8,7 +8,8 @@ OUTPUT_DIR = "/data/scATA/SingleCellOpenChromatin/local/ongoing/SVG_Benchmarking
 
 method_list = ["BOOST-GP", "SOMDE", "MoranI", 
                "scGCO", "Sepal", "SpaGCN", 
-               "Spanve", "SPARK", "SPARK-X"]
+               "Spanve", "SPARK", "SPARK-X",
+               "SpatialDE"]
 
 for method in method_list:
     if not os.path.exists(f"{OUTPUT_DIR}/{method}"):
