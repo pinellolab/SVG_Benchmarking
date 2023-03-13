@@ -1,2 +1,2 @@
 scGCO used 64 out of 128 cores
-It took 76 seconds
+It took 80 seconds

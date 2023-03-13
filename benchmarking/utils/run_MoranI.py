@@ -31,7 +31,7 @@ def main():
     sq.gr.spatial_autocorr(adata, mode="moran", n_perms=100, n_jobs=32)
     df = adata.uns["moranI"]
     df = df.loc[adata.var_names]
-    df["spatially_variable"] = adata.var.spatially_variable.astype(np.int).values
+    df["spatially_variable"] = adata.var.spatially_variable.astype(np.int16).values
     df = df[["pval_sim_fdr_bh", "spatially_variable"]]
     df.to_csv(args.output)
 

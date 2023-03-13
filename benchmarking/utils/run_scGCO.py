@@ -36,7 +36,7 @@ def main():
     gmmDict = gmm_model(data)  # multiGMM
     df = identify_spatial_genes(locs, data, cellGraph, gmmDict)
     df = df.loc[adata.var_names]
-    df["spatially_variable"] = adata.var.spatially_variable.astype(np.int).values
+    df["spatially_variable"] = adata.var.spatially_variable.astype(np.int16).values
     df = df[["fdr", "spatially_variable"]]
 
     df.to_csv(args.output)

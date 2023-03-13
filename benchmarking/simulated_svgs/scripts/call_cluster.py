@@ -1,10 +1,14 @@
+"""Submit jobs to cluster"""
+
 import os
 import subprocess
 
 INPUT_DIR = "/data/scATA/SingleCellOpenChromatin/local/ongoing/SVG_Benchmarking/data/simulation/simulated"
 OUTPUT_DIR = "/data/scATA/SingleCellOpenChromatin/local/ongoing/SVG_Benchmarking/benchmarking/simulated_svgs"
 
-method_list = ["BOOST-GP", "SMODE", "MoranI", "scGCO", "Sepal", "SpaGCN"]
+method_list = ["BOOST-GP", "SOMDE", "MoranI", 
+               "scGCO", "Sepal", "SpaGCN", 
+               "Spanve", "SPARK", "SPARK-X"]
 
 for method in method_list:
     if not os.path.exists(f"{OUTPUT_DIR}/{method}"):

@@ -30,7 +30,7 @@ def main():
     sq.gr.sepal(adata, max_neighs=4, genes=adata.var_names, n_jobs=1)
     df = adata.uns["sepal_score"]
     df = df.loc[adata.var_names]
-    df['spatially_variable'] = adata.var.spatially_variable.astype(np.int).values
+    df['spatially_variable'] = adata.var.spatially_variable.astype(np.int16).values
     df = df[['sepal_score', 'spatially_variable']]
 
     df.to_csv(args.output)
