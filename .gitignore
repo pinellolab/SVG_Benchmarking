@@ -2,6 +2,7 @@ data/real_world/*/*.h5ad
 data/simulation/10x/*.csv
 methods
 */*/.ipynb_checkpoints/
+*/*/*/.ipynb_checkpoints/
 data/simulation/10X/reference/
 data/simulation/10X/simulated/
 data/simulation/10X/.ipynb_checkpoints/
@@ -9,3 +10,4 @@ benchmarking/utils/.vscode
 data/simulation/reference/
 data/simulation/simulated/
 */.ipynb_checkpoints/
+*/.vscode
