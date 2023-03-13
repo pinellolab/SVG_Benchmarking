@@ -1,1 +1,0 @@
-slurmstepd: error: *** JOB 189776 ON compute-node003 CANCELLED AT 2023-03-12T22:56:55 ***

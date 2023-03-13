@@ -4,8 +4,7 @@ import subprocess
 INPUT_DIR = "/data/scATA/SingleCellOpenChromatin/local/ongoing/SVG_Benchmarking/data/simulation/simulated"
 OUTPUT_DIR = "/data/scATA/SingleCellOpenChromatin/local/ongoing/SVG_Benchmarking/benchmarking/simulated_svgs"
 
-method_list = ['BOOST-GP', "SMODE", "MoranI", "scGCO", "Sepal"]
-method_list = ["SMODE", "MoranI", "scGCO", "Sepal"]
+method_list = ["BOOST-GP", "SMODE", "MoranI", "scGCO", "Sepal", "SpaGCN"]
 
 for method in method_list:
     if not os.path.exists(f"{OUTPUT_DIR}/{method}"):
