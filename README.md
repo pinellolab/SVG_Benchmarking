@@ -56,4 +56,9 @@ GCN, Graph convolutional network; SOM, Self-organizing map; ZINB, Zero-inflated 
 * Performance on clustering spatial domains
 * Computational time and memory usage
 
+### Benchmarking paper 2
+[Spatial Transcriptomics Arena (STAr): an Integrated Platform for Spatial Transcriptomics Methodology Research](https://www.biorxiv.org/content/10.1101/2023.03.10.532127v1)
+
+* 7 methods were benchmarked (BOOST-GP, BOOST-MI, BIN SPECT, SpaGCN, SPARK, TrendSeek, SpatialDE)
+* 2 rank aggregate methods were benchmarked (GEO, MC2)
 
