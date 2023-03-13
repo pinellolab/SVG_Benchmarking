@@ -1,5 +1,8 @@
-library(anndata)
-library(nnSVG)
+suppressMessages(library(SpatialExperiment))
+suppressMessages(library(scran))
+suppressMessages(library(nnSVG))
+suppressMessages(library(ggplot2))
+suppressMessages(library(anndata))
 library(optparse)
 
 option_list = list(
@@ -16,13 +19,30 @@ adata <- read_h5ad(opt$input)
 counts <- t(as.matrix(adata$X))
 loc <- as.data.frame(adata$obsm[['spatial']])
 
-df <- nnSVG(counts, loc, n_threads=30)
+row_data = adata$var
+row_data$gene_id = rownames(row_data)
+row_data$feature_type = "Gene Expression"
 
-df_var <- adata$var
-df_var$spatially_variable <- as.integer(df_var$spatially_variable)
+colnames(loc) <- c("x", "y")
+rownames(loc) <- colnames(counts)
 
-df <- df[rownames(df_var), ]
-df$spatially_variable <- as.integer(df_var$spatially_variable)
+spe <- SpatialExperiment(
+    assays = list(counts = counts),
+    rowData = row_data,
+    colData = loc, 
+    spatialCoordsNames = c("x", "y"))
+
+# calculate logcounts (log-transformed normalized counts) using scran package
+# using library size factors
+spe <- computeLibraryFactors(spe)
+spe <- logNormCounts(spe)
+
+set.seed(123)
+spe <- nnSVG(spe, n_threads=10)
+
+df <- rowData(spe)
+
 df <- df[, c("padj", "spatially_variable")]
-    
+df$spatially_variable <- as.integer(df$spatially_variable)
+
 write.csv(df, file=opt$output, quote=FALSE)

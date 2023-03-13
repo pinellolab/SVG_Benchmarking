@@ -1,2 +1,0 @@
-slurmstepd: error: *** JOB 189919 ON compute-node006 CANCELLED AT 2023-03-13T03:23:32 ***
-slurmstepd: error: *** JOB 189910 ON compute-node005 CANCELLED AT 2023-03-13T03:23:32 ***
