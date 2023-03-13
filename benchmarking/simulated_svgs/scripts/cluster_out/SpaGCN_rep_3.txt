@@ -1,0 +1,134 @@
+Calculateing adj matrix using xy only...
+Run 1: l [0.01, 1000], p [0.0, 2497.9591184697747]
+Run 2: l [0.01, 500.005], p [0.0, 2494.841064453125]
+Run 3: l [0.01, 250.0075], p [0.0, 2482.434814453125]
+Run 4: l [0.01, 125.00874999999999], p [0.0, 2433.849609375]
+Run 5: l [0.01, 62.509375], p [0.0, 2254.9013671875]
+Run 6: l [0.01, 31.2596875], p [0.0, 1725.561767578125]
+Run 7: l [0.01, 15.63484375], p [0.0, 864.577392578125]
+Run 8: l [0.01, 7.822421875], p [0.0, 293.59014892578125]
+Run 9: l [0.01, 3.9162109375], p [0.0, 83.75708770751953]
+Run 10: l [0.01, 1.9631054687499998], p [0.0, 21.752925872802734]
+Run 11: l [0.01, 0.9865527343749999], p [0.0, 4.941504001617432]
+Run 12: l [0.01, 0.49827636718749996], p [0.0, 0.5931874513626099]
+Run 13: l [0.25413818359374996, 0.49827636718749996], p [0.0017036199569702148, 0.5931874513626099]
+Run 14: l [0.37620727539062493, 0.49827636718749996], p [0.11784100532531738, 0.5931874513626099]
+Run 15: l [0.4372418212890624, 0.49827636718749996], p [0.307401180267334, 0.5931874513626099]
+Run 16: l [0.4677590942382812, 0.49827636718749996], p [0.4391402006149292, 0.5931874513626099]
+Run 17: l [0.4677590942382812, 0.48301773071289056], p [0.4391402006149292, 0.5135186910629272]
+Run 18: l [0.4753884124755859, 0.48301773071289056], p [0.4756498336791992, 0.5135186910629272]
+recommended l =  0.47920307159423825
+Start at res =  0.7 step =  0.1
+Initializing cluster centers with louvain, resolution =  0.7
+Epoch  0
+Epoch  10
+Res =  0.7 Num of clusters =  9
+Initializing cluster centers with louvain, resolution =  0.6
+Epoch  0
+Epoch  10
+Res =  0.6 Num of clusters =  8
+Res changed to 0.6
+Initializing cluster centers with louvain, resolution =  0.5
+Epoch  0
+Epoch  10
+Res =  0.5 Num of clusters =  7
+recommended res =  0.5
+Initializing cluster centers with louvain, resolution =  0.5
+Epoch  0
+Epoch  10
+Epoch  20
+delta_label  0.0044 < tol  0.005
+Reach tolerance threshold. Stopping training.
+Total epoch: 28
+target: 0
+Calculateing adj matrix using xy only...
+Calculateing adj matrix using xy only...
+Run 1: radius [1.0, 9.848857879638672], num_nbr [4.906934306569343, 248.67518248175182]
+Calculateing adj matrix using xy only...
+Run 2: radius [1.0, 5.424428939819336], num_nbr [4.906934306569343, 87.24817518248175]
+Calculateing adj matrix using xy only...
+Run 3: radius [1.0, 3.212214469909668], num_nbr [4.906934306569343, 34.698905109489054]
+Calculateing adj matrix using xy only...
+recommended radius =  2.106107234954834 num_nbr=12.543795620437956
+radius= 2.106107234954834 average number of neighbors for each spot is 12.543795620437956
+ Cluster 0 has neighbors:
+No neighbor domain found, try bigger radius or smaller ratio.
+target: 1
+Calculateing adj matrix using xy only...
+Calculateing adj matrix using xy only...
+Run 1: radius [1.0, 9.848857879638672], num_nbr [5.0, 300.62433862433863]
+Calculateing adj matrix using xy only...
+Run 2: radius [1.0, 5.424428939819336], num_nbr [5.0, 96.91534391534391]
+Calculateing adj matrix using xy only...
+Run 3: radius [1.0, 3.212214469909668], num_nbr [5.0, 36.97883597883598]
+Calculateing adj matrix using xy only...
+recommended radius =  2.106107234954834 num_nbr=12.997354497354497
+radius= 2.106107234954834 average number of neighbors for each spot is 12.997354497354497
+ Cluster 1 has neighbors:
+Dmain  2 :  203
+target: 2
+Calculateing adj matrix using xy only...
+Calculateing adj matrix using xy only...
+Run 1: radius [1.0, 9.848857879638672], num_nbr [4.897435897435898, 240.48717948717947]
+Calculateing adj matrix using xy only...
+Run 2: radius [1.0, 5.424428939819336], num_nbr [4.897435897435898, 85.88461538461539]
+Calculateing adj matrix using xy only...
+Run 3: radius [1.0, 3.212214469909668], num_nbr [4.897435897435898, 34.38717948717949]
+Calculateing adj matrix using xy only...
+recommended radius =  2.106107234954834 num_nbr=12.48974358974359
+radius= 2.106107234954834 average number of neighbors for each spot is 12.48974358974359
+ Cluster 2 has neighbors:
+Dmain  1 :  203
+target: 3
+Calculateing adj matrix using xy only...
+Calculateing adj matrix using xy only...
+Run 1: radius [1.0, 9.848857879638672], num_nbr [4.942786069651741, 264.80348258706465]
+Calculateing adj matrix using xy only...
+Run 2: radius [1.0, 5.424428939819336], num_nbr [4.942786069651741, 90.3955223880597]
+Calculateing adj matrix using xy only...
+Run 3: radius [1.0, 3.212214469909668], num_nbr [4.942786069651741, 35.49004975124378]
+Calculateing adj matrix using xy only...
+recommended radius =  2.106107234954834 num_nbr=12.713930348258707
+radius= 2.106107234954834 average number of neighbors for each spot is 12.713930348258707
+ Cluster 3 has neighbors:
+No neighbor domain found, try bigger radius or smaller ratio.
+target: 4
+Calculateing adj matrix using xy only...
+Calculateing adj matrix using xy only...
+Run 1: radius [1.0, 9.848857879638672], num_nbr [4.899408284023669, 232.82544378698225]
+Calculateing adj matrix using xy only...
+Run 2: radius [1.0, 5.424428939819336], num_nbr [4.899408284023669, 84.81952662721893]
+Calculateing adj matrix using xy only...
+Run 3: radius [1.0, 3.212214469909668], num_nbr [4.899408284023669, 34.27218934911242]
+Calculateing adj matrix using xy only...
+recommended radius =  2.106107234954834 num_nbr=12.488165680473372
+radius= 2.106107234954834 average number of neighbors for each spot is 12.488165680473372
+ Cluster 4 has neighbors:
+No neighbor domain found, try bigger radius or smaller ratio.
+target: 5
+Calculateing adj matrix using xy only...
+Calculateing adj matrix using xy only...
+Run 1: radius [1.0, 9.848857879638672], num_nbr [4.901234567901234, 244.79835390946502]
+Calculateing adj matrix using xy only...
+Run 2: radius [1.0, 5.424428939819336], num_nbr [4.901234567901234, 86.50205761316873]
+Calculateing adj matrix using xy only...
+Run 3: radius [1.0, 3.212214469909668], num_nbr [4.901234567901234, 34.534979423868315]
+Calculateing adj matrix using xy only...
+recommended radius =  2.106107234954834 num_nbr=12.51440329218107
+radius= 2.106107234954834 average number of neighbors for each spot is 12.51440329218107
+ Cluster 5 has neighbors:
+No neighbor domain found, try bigger radius or smaller ratio.
+target: 6
+Calculateing adj matrix using xy only...
+Calculateing adj matrix using xy only...
+Run 1: radius [1.0, 9.848857879638672], num_nbr [4.8606965174129355, 217.8507462686567]
+Calculateing adj matrix using xy only...
+Run 2: radius [1.0, 5.424428939819336], num_nbr [4.8606965174129355, 81.5273631840796]
+Calculateing adj matrix using xy only...
+Run 3: radius [1.0, 3.212214469909668], num_nbr [4.8606965174129355, 33.398009950248756]
+Calculateing adj matrix using xy only...
+recommended radius =  2.106107234954834 num_nbr=12.303482587064677
+radius= 2.106107234954834 average number of neighbors for each spot is 12.303482587064677
+ Cluster 6 has neighbors:
+No neighbor domain found, try bigger radius or smaller ratio.
+It took 34 seconds

@@ -9,15 +9,13 @@ OUTPUT_DIR = "/data/scATA/SingleCellOpenChromatin/local/ongoing/SVG_Benchmarking
 method_list = ["BOOST-GP", "SOMDE", "MoranI", 
                "scGCO", "Sepal", "SpaGCN", 
                "Spanve", "SPARK", "SPARK-X",
-               "SpatialDE"]
-
-method_list = ["nnSVG"]
+               "SpatialDE", "nnSVG"]
 
 for method in method_list:
     if not os.path.exists(f"{OUTPUT_DIR}/{method}"):
         os.mkdir(f"{OUTPUT_DIR}/{method}")
 
-    for i in range(1):
+    for i in range(10):
         input_anndata = f"{INPUT_DIR}/svgs_rep_{i}.h5ad"
         output_csv = f"{OUTPUT_DIR}/{method}/rep_{i}.csv"
 

@@ -1,0 +1,6 @@
+#2 Nearest Neighbors Found
+#4 Entropy Calculated
+#5 G-test Performed
+Write results to adata.var['spanve_spatial_features']
+#--- Done, using time 14.91 sec ---#
+It took 17 seconds
