@@ -1,0 +1,2 @@
+[NbConvertApp] Converting notebook ./01_scGCO_simulate_SVGs.ipynb to notebook
+[NbConvertApp] Writing 14904 bytes to 01_scGCO_simulate_SVGs.nbconvert.ipynb
