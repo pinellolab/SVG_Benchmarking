@@ -11,6 +11,8 @@ method_list = ["BOOST-GP", "SOMDE", "MoranI",
                "Spanve", "SPARK", "SPARK-X",
                "SpatialDE"]
 
+method_list = ["nnSVG"]
+
 for method in method_list:
     if not os.path.exists(f"{OUTPUT_DIR}/{method}"):
         os.mkdir(f"{OUTPUT_DIR}/{method}")
