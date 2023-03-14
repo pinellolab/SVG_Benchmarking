@@ -1,2 +1,13 @@
 [1] "Chain 1"
 0% has been done
+10% has been done
+20% has been done
+30% has been done
+40% has been done
+50% has been done
+60% has been done
+70% has been done
+80% has been done
+90% has been done
+[1] "runtime is 48039.209s"
+It took 48061 seconds
