@@ -14,5 +14,5 @@
 source ~/.bashrc
 conda activate svg
 
-jupyter nbconvert --to html --execute ./01_simulate_svgs.ipynb --output-dir ./viz
-jupyter nbconvert --to html --execute ./02_simulate_refs.ipynb --output-dir ./viz
+#jupyter nbconvert --to html --execute ./01_diverse_spatial_patterns.ipynb --output-dir ./viz
+jupyter nbconvert --to html --execute ./02_log_fold_change.ipynb --output-dir ./viz

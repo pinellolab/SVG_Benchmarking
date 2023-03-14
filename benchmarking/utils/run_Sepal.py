@@ -18,6 +18,9 @@ def parse_args():
     parser.add_argument(
         "-o", "--output", type=str, default=None, help="Output filename for results"
     )
+    parser.add_argument(
+        "-m", "--max_neighs", type=int, default=4, help="max_neighs"
+    )
 
     return parser.parse_args()
 
@@ -27,7 +30,7 @@ def main():
 
     adata = sc.read_h5ad(args.input)
     sq.gr.spatial_neighbors(adata, coord_type="grid")
-    sq.gr.sepal(adata, max_neighs=4, genes=adata.var_names, n_jobs=1)
+    sq.gr.sepal(adata, max_neighs=args.max_neighs, genes=adata.var_names, n_jobs=1)
     df = adata.uns["sepal_score"]
     df = df.loc[adata.var_names]
     df['spatially_variable'] = adata.var.spatially_variable.astype(np.int16).values
