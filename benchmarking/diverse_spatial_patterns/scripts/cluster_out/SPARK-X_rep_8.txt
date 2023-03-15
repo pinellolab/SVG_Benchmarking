@@ -13,4 +13,4 @@
 ## Testing With Cosine Kernel 3
 ## Testing With Cosine Kernel 4
 ## Testing With Cosine Kernel 5
-It took 15 seconds
+It took 19 seconds

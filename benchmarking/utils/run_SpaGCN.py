@@ -129,9 +129,11 @@ def main():
 
     df = pd.concat(de_genes_all)[["genes", "pvals_adj"]]
     df = df.groupby(["genes"]).min()
-    df = df.loc[adata.var_names]
-    df["spatially_variable"] = adata.var.spatially_variable.astype(np.int16).values
-    df = df[["pvals_adj", "spatially_variable"]]
+    if "spatially_variable" in adata.var.columns:
+        df = df.loc[adata.var_names]
+        df["spatially_variable"] = adata.var.spatially_variable.astype(np.int16).values
+        df = df[["pvals_adj", "spatially_variable"]]
+        
     df.to_csv(args.output)
 
 

@@ -6,7 +6,9 @@ option_list = list(
     make_option(c("-i", "--input"), type="character", default=NULL, 
               help="dataset file name", metavar="character"),
     make_option(c("-o", "--output"), type="character", default=NULL, 
-              help="output file name [default= %default]", metavar="character")
+              help="output file name [default= %default]", metavar="character"),
+    make_option(c("-s", "--simulate"), default=FALSE, action = "store_true", 
+              help="For simulated data, save the true labels and prediction")
 )
  
 opt_parser = OptionParser(option_list=option_list)
@@ -31,13 +33,17 @@ spark <- spark.vc(spark,
 spark <- spark.test(spark, 
                      check_positive = T, 
                      verbose = F)
-    
-df_var <- adata$var
-df_var$spatially_variable <- as.integer(df_var$spatially_variable)
 
 df <- as.data.frame(spark@res_mtest)
-df <- df[rownames(df_var), ]
-df$spatially_variable <- as.integer(df_var$spatially_variable)
-df <- df[, c("adjusted_pvalue", "spatially_variable")]
-    
+
+if(opt$simulate){
+    # combine the dataframe by rownames
+    df_true <- adata$var
+    df <- merge(df, df_true, by = "row.names", all = TRUE)
+    df[is.na(df)] <- 1
+    rownames(df) <- df$Row.names
+    df$spatially_variable <- as.integer(df$spatially_variable)
+    df <- df[, c("adjusted_pvalue", "spatially_variable")]
+
+}
 write.csv(df, file=opt$output, quote=FALSE)

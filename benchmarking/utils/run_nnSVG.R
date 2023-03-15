@@ -9,7 +9,9 @@ option_list = list(
     make_option(c("-i", "--input"), type="character", default=NULL, 
               help="dataset file name", metavar="character"),
     make_option(c("-o", "--output"), type="character", default=NULL, 
-              help="output file name [default= %default]", metavar="character")
+              help="output file name [default= %default]", metavar="character"),
+    make_option(c("-s", "--simulate"), default=FALSE, action = "store_true", 
+              help="For simulated data, save the true labels and prediction")
 )
  
 opt_parser = OptionParser(option_list=option_list)
@@ -42,7 +44,9 @@ spe <- nnSVG(spe, n_threads=10)
 
 df <- rowData(spe)
 
-df <- df[, c("padj", "spatially_variable")]
-df$spatially_variable <- as.integer(df$spatially_variable)
+if(opt$simulate){
+    df <- df[, c("padj", "spatially_variable")]
+    df$spatially_variable <- as.integer(df$spatially_variable)
+}
 
 write.csv(df, file=opt$output, quote=FALSE)

@@ -2,5 +2,5 @@
 #4 Entropy Calculated
 #5 G-test Performed
 Write results to adata.var['spanve_spatial_features']
-#--- Done, using time 14.88 sec ---#
-It took 17 seconds
+#--- Done, using time 18.20 sec ---#
+It took 21 seconds

@@ -131,4 +131,4 @@ recommended radius =  2.106107234954834 num_nbr=12.303482587064677
 radius= 2.106107234954834 average number of neighbors for each spot is 12.303482587064677
  Cluster 6 has neighbors:
 No neighbor domain found, try bigger radius or smaller ratio.
-It took 34 seconds
+It took 31 seconds

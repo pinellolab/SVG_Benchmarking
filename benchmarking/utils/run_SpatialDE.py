@@ -43,9 +43,11 @@ def main():
     X = adata.obs[['x', 'y']]
     df = SpatialDE.run(X, resid_expr)
     df.set_index("g", inplace=True)
-    df = df.loc[adata.var_names]
-    df['spatially_variable'] = adata.var.spatially_variable.astype(np.int).values
-    df = df[['qval', 'spatially_variable']]
+    
+    if "spatially_variable" in adata.var.columns:
+        df = df.loc[adata.var_names]
+        df['spatially_variable'] = adata.var.spatially_variable.astype(np.int16).values
+        df = df[['qval', 'spatially_variable']]
 
     df.to_csv(args.output)
 

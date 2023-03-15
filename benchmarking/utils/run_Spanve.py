@@ -33,10 +33,11 @@ def main():
     spanve = Spanve(adata)
     spanve.fit(verbose=True)
     df = spanve.result_df
-
-    df = df.loc[adata.var_names]
-    df['spatially_variable'] = adata.var.spatially_variable.astype(np.int16).values
-    df = df[['fdrs', 'spatially_variable']]
+    if "spatially_variable" in adata.var.columns:
+        df = df.loc[adata.var_names]
+        df['spatially_variable'] = adata.var.spatially_variable.astype(np.int16).values
+        df = df[['fdrs', 'spatially_variable']]
+        
     df.to_csv(args.output)
 
 

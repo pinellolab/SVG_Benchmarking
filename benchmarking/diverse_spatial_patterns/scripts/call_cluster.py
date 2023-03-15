@@ -3,8 +3,8 @@
 import os
 import subprocess
 
-INPUT_DIR = "/data/scATA/SingleCellOpenChromatin/local/ongoing/SVG_Benchmarking/data/simulation/simulated"
-OUTPUT_DIR = "/data/scATA/SingleCellOpenChromatin/local/ongoing/SVG_Benchmarking/benchmarking/simulated_svgs"
+INPUT_DIR = "/data/scATA/SingleCellOpenChromatin/local/ongoing/SVG_Benchmarking/data/simulation/diverse_spatial_patterns"
+OUTPUT_DIR = "/data/scATA/SingleCellOpenChromatin/local/ongoing/SVG_Benchmarking/benchmarking/diverse_spatial_patterns"
 
 method_list = ["BOOST-GP", "SOMDE", "MoranI", 
                "scGCO", "Sepal", "SpaGCN", 
@@ -16,7 +16,7 @@ for method in method_list:
         os.mkdir(f"{OUTPUT_DIR}/{method}")
 
     for i in range(10):
-        input_anndata = f"{INPUT_DIR}/svgs_rep_{i}.h5ad"
+        input_anndata = f"{INPUT_DIR}/rep_{i}.h5ad"
         output_csv = f"{OUTPUT_DIR}/{method}/rep_{i}.csv"
 
         job_name = f"{method}_rep_{i}"

@@ -37,9 +37,11 @@ def main():
     nres = som.norm()
     df, SVnum = som.run()
     df.set_index("g", inplace=True)
-    df = df.loc[adata.var_names]
-    df["spatially_variable"] = adata.var.spatially_variable.astype(np.int16).values
-    df = df[["qval", "spatially_variable"]]
+    if "spatially_variable" in adata.var.columns:
+        df = df.loc[adata.var_names]
+        df["spatially_variable"] = adata.var.spatially_variable.astype(np.int16).values
+        df = df[["qval", "spatially_variable"]]
+        
     df.to_csv(args.output)
 
 

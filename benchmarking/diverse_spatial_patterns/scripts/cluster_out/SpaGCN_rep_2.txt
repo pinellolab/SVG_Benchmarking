@@ -142,4 +142,4 @@ recommended radius =  2.106107234954834 num_nbr=12.289198606271777
 radius= 2.106107234954834 average number of neighbors for each spot is 12.289198606271777
  Cluster 6 has neighbors:
 Dmain  2 :  192
-It took 39 seconds
+It took 35 seconds

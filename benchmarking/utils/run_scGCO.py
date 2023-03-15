@@ -35,9 +35,11 @@ def main():
     cellGraph = create_graph_with_weight(locs, exp)
     gmmDict = gmm_model(data)  # multiGMM
     df = identify_spatial_genes(locs, data, cellGraph, gmmDict)
-    df = df.loc[adata.var_names]
-    df["spatially_variable"] = adata.var.spatially_variable.astype(np.int16).values
-    df = df[["fdr", "spatially_variable"]]
+    
+    if "spatially_variable" in adata.var.columns:    
+        df = df.loc[adata.var_names]
+        df["spatially_variable"] = adata.var.spatially_variable.astype(np.int16).values
+        df = df[["fdr", "spatially_variable"]]
 
     df.to_csv(args.output)
 

@@ -32,9 +32,10 @@ def main():
     sq.gr.spatial_neighbors(adata, coord_type="grid")
     sq.gr.sepal(adata, max_neighs=args.max_neighs, genes=adata.var_names, n_jobs=1)
     df = adata.uns["sepal_score"]
-    df = df.loc[adata.var_names]
-    df['spatially_variable'] = adata.var.spatially_variable.astype(np.int16).values
-    df = df[['sepal_score', 'spatially_variable']]
+    if "spatially_variable" in adata.var.columns:
+        df = df.loc[adata.var_names]
+        df['spatially_variable'] = adata.var.spatially_variable.astype(np.int16).values
+        df = df[['sepal_score', 'spatially_variable']]
 
     df.to_csv(args.output)
 
