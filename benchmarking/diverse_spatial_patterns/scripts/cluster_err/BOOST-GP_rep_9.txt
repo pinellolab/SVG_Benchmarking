@@ -1,0 +1,1 @@
+slurmstepd: error: *** JOB 190588 ON compute-node002 CANCELLED AT 2023-03-15T16:21:37 ***
