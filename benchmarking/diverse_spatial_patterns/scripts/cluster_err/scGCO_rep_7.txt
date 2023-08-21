@@ -1,18 +1,0 @@
-/home/rs619065/miniconda3/envs/svg/lib/python3.9/site-packages/pysal/model/spvcm/abstracts.py:10: UserWarning: The `dill` module is required to use the sqlite backend fully.
-  from .sqlite import head_to_sql, start_sql
-2023-03-15 02:24:44.011080: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
-To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
-2023-03-15 02:24:44.172468: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /cm/shared/apps/slurm/current/lib64/slurm:/cm/shared/apps/slurm/current/lib64:/cm/local/apps/gcc/9.2.0/lib:/cm/local/apps/gcc/9.2.0/lib64
-2023-03-15 02:24:44.172512: I tensorflow/compiler/xla/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
-2023-03-15 02:24:45.053006: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /cm/shared/apps/slurm/current/lib64/slurm:/cm/shared/apps/slurm/current/lib64:/cm/local/apps/gcc/9.2.0/lib:/cm/local/apps/gcc/9.2.0/lib64
-2023-03-15 02:24:45.053117: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /cm/shared/apps/slurm/current/lib64/slurm:/cm/shared/apps/slurm/current/lib64:/cm/local/apps/gcc/9.2.0/lib:/cm/local/apps/gcc/9.2.0/lib64
-2023-03-15 02:24:45.053124: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
-/home/rs619065/miniconda3/envs/svg/lib/python3.9/site-packages/sklearn/mixture/_base.py:116: ConvergenceWarning: Number of distinct clusters (2) found smaller than n_clusters (3). Possibly due to duplicate points in X.
-  cluster.KMeans(
-/home/rs619065/miniconda3/envs/svg/lib/python3.9/site-packages/sklearn/mixture/_base.py:116: ConvergenceWarning: Number of distinct clusters (2) found smaller than n_clusters (4). Possibly due to duplicate points in X.
-  cluster.KMeans(
-  0%|          | 0/64 [00:00<?, ?it/s]  2%|▏         | 1/64 [00:31<32:38, 31.09s/it]  3%|▎         | 2/64 [00:33<14:26, 13.98s/it]  8%|▊         | 5/64 [00:35<04:23,  4.47s/it]  9%|▉         | 6/64 [00:39<04:12,  4.35s/it] 11%|█         | 7/64 [00:41<03:32,  3.72s/it] 17%|█▋        | 11/64 [00:43<01:34,  1.78s/it] 19%|█▉        | 12/64 [00:45<01:34,  1.82s/it] 23%|██▎       | 15/64 [00:47<01:04,  1.32s/it] 27%|██▋       | 17/64 [00:49<00:57,  1.23s/it] 30%|██▉       | 19/64 [00:51<00:52,  1.16s/it] 34%|███▍      | 22/64 [00:53<00:40,  1.03it/s] 41%|████      | 26/64 [00:55<00:29,  1.30it/s] 44%|████▍     | 28/64 [00:57<00:29,  1.21it/s] 48%|████▊     | 31/64 [00:59<00:25,  1.30it/s] 58%|█████▊    | 37/64 [01:01<00:15,  1.79it/s] 75%|███████▌  | 48/64 [01:03<00:05,  2.88it/s] 83%|████████▎ | 53/64 [01:05<00:03,  2.77it/s] 92%|█████████▏| 59/64 [01:07<00:01,  2.84it/s]100%|██████████| 64/64 [01:07<00:00,  3.81it/s]100%|██████████| 64/64 [01:07<00:00,  1.05s/it]
-
-real	1m30.604s
-user	2m28.754s
-sys	0m19.700s

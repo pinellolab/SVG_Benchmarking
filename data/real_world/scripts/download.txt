@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "download.py", line 14, in <module>
-    protocol = filename.split("_")[0]
-AttributeError: 'NoneType' object has no attribute 'split'

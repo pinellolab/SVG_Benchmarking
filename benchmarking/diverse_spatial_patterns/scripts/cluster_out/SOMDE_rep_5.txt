@@ -1,3 +1,0 @@
-using 15*15 SOM nodes for 2500 points
-Warning: data was not float32. A 32-bit copy was made
-It took 10 seconds

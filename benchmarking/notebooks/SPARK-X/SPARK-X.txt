@@ -1,2 +1,0 @@
-[NbConvertApp] Converting notebook ./01_SPARK-X_simulate_SVGs.ipynb to html
-[NbConvertApp] Writing 583509 bytes to viz/01_SPARK-X_simulate_SVGs.html
