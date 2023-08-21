@@ -1,0 +1,266 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 50
+Rules claiming more threads will be scaled down.
+Job stats:
+job               count    min threads    max threads
+--------------  -------  -------------  -------------
+all                   1              1              1
+run_GPcounts          1             10             10
+run_MoranI            1             10             10
+run_SOMDE             1             10             10
+run_SPARK             1             10             10
+run_SPARKX            1             10             10
+run_Sepal             1             10             10
+run_SpaGCN            1             10             10
+run_SpaGFT            1             10             10
+run_SpatialDE         1             10             10
+run_SpatialDE2        1             10             10
+run_nnSVG             1             10             10
+run_scGCO             1             10             10
+total                13              1             10
+
+Select jobs to execute...
+
+[Sat Jul 15 15:50:11 2023]
+rule run_GPcounts:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/CellTypeDeconvolution/data/MOBSP.h5ad
+    output: results/cell_type_deconvolution/GPcounts/MOBSP.csv
+    jobid: 11
+    benchmark: benchmarks/cell_type_deconvolution/GPcounts/MOBSP.txt
+    reason: Missing output files: results/cell_type_deconvolution/GPcounts/MOBSP.csv
+    wildcards: dataset=MOBSP
+    threads: 10
+    resources: tmpdir=/tmp
+
+
+[Sat Jul 15 15:50:11 2023]
+rule run_nnSVG:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/CellTypeDeconvolution/data/MOBSP.h5ad
+    output: results/cell_type_deconvolution/nnSVG/MOBSP.csv
+    jobid: 1
+    benchmark: benchmarks/cell_type_deconvolution/nnSVG/MOBSP.txt
+    reason: Missing output files: results/cell_type_deconvolution/nnSVG/MOBSP.csv
+    wildcards: dataset=MOBSP
+    threads: 10
+    resources: tmpdir=/tmp
+
+
+[Sat Jul 15 15:50:11 2023]
+rule run_MoranI:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/CellTypeDeconvolution/data/MOBSP.h5ad
+    output: results/cell_type_deconvolution/MoranI/MOBSP.csv
+    jobid: 7
+    benchmark: benchmarks/cell_type_deconvolution/MoranI/MOBSP.txt
+    reason: Missing output files: results/cell_type_deconvolution/MoranI/MOBSP.csv
+    wildcards: dataset=MOBSP
+    threads: 10
+    resources: tmpdir=/tmp
+
+
+[Sat Jul 15 15:50:11 2023]
+rule run_SpaGFT:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/CellTypeDeconvolution/data/MOBSP.h5ad
+    output: results/cell_type_deconvolution/SpaGFT/MOBSP.csv
+    jobid: 10
+    benchmark: benchmarks/cell_type_deconvolution/SpaGFT/MOBSP.txt
+    reason: Missing output files: results/cell_type_deconvolution/SpaGFT/MOBSP.csv
+    wildcards: dataset=MOBSP
+    threads: 10
+    resources: tmpdir=/tmp
+
+
+[Sat Jul 15 15:50:11 2023]
+rule run_SpatialDE:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/CellTypeDeconvolution/data/MOBSP.h5ad
+    output: results/cell_type_deconvolution/SpatialDE/MOBSP.csv
+    jobid: 5
+    benchmark: benchmarks/cell_type_deconvolution/SpatialDE/MOBSP.txt
+    reason: Missing output files: results/cell_type_deconvolution/SpatialDE/MOBSP.csv
+    wildcards: dataset=MOBSP
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: zl_svg
+Activating conda environment: nnSVG
+Activating conda environment: GPcounts-GPU
+Activating conda environment: SpaGFT
+Activating conda environment: SpatialDE
+[Sat Jul 15 15:50:26 2023]
+Error in rule run_SpatialDE:
+    jobid: 5
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/CellTypeDeconvolution/data/MOBSP.h5ad
+    output: results/cell_type_deconvolution/SpatialDE/MOBSP.csv
+    conda-env: SpatialDE
+    shell:
+        python scripts/cell_type_deconvolution/run_SpatialDE.py -i /data/pinello/PROJECTS/2023_03_SVGBenchmarking/CellTypeDeconvolution/data/MOBSP.h5ad -o results/cell_type_deconvolution/SpatialDE/MOBSP.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Select jobs to execute...
+
+[Sat Jul 15 15:50:26 2023]
+rule run_Sepal:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/CellTypeDeconvolution/data/MOBSP.h5ad
+    output: results/cell_type_deconvolution/Sepal/MOBSP.csv
+    jobid: 12
+    benchmark: benchmarks/cell_type_deconvolution/Sepal/MOBSP.txt
+    reason: Missing output files: results/cell_type_deconvolution/Sepal/MOBSP.csv
+    wildcards: dataset=MOBSP
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: zl_svg
+[Sat Jul 15 15:50:30 2023]
+Finished job 7.
+1 of 13 steps (8%) done
+Select jobs to execute...
+
+[Sat Jul 15 15:50:30 2023]
+rule run_scGCO:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/CellTypeDeconvolution/data/MOBSP.h5ad
+    output: results/cell_type_deconvolution/scGCO/MOBSP.csv
+    jobid: 8
+    benchmark: benchmarks/cell_type_deconvolution/scGCO/MOBSP.txt
+    reason: Missing output files: results/cell_type_deconvolution/scGCO/MOBSP.csv
+    wildcards: dataset=MOBSP
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: scGCO
+[Sat Jul 15 15:50:33 2023]
+Error in rule run_Sepal:
+    jobid: 12
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/CellTypeDeconvolution/data/MOBSP.h5ad
+    output: results/cell_type_deconvolution/Sepal/MOBSP.csv
+    conda-env: zl_svg
+    shell:
+        python scripts/cell_type_deconvolution/run_Sepal.py -i /data/pinello/PROJECTS/2023_03_SVGBenchmarking/CellTypeDeconvolution/data/MOBSP.h5ad -o results/cell_type_deconvolution/Sepal/MOBSP.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Select jobs to execute...
+
+[Sat Jul 15 15:50:33 2023]
+rule run_SPARKX:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/CellTypeDeconvolution/data/MOBSP.h5ad
+    output: results/cell_type_deconvolution/SPARK-X/MOBSP.csv
+    jobid: 2
+    benchmark: benchmarks/cell_type_deconvolution/SPARK-X/MOBSP.txt
+    reason: Missing output files: results/cell_type_deconvolution/SPARK-X/MOBSP.csv
+    wildcards: dataset=MOBSP
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: SPARK
+[Sat Jul 15 15:50:33 2023]
+Error in rule run_SpaGFT:
+    jobid: 10
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/CellTypeDeconvolution/data/MOBSP.h5ad
+    output: results/cell_type_deconvolution/SpaGFT/MOBSP.csv
+    conda-env: SpaGFT
+    shell:
+        python scripts/cell_type_deconvolution/run_SpaGFT.py -i /data/pinello/PROJECTS/2023_03_SVGBenchmarking/CellTypeDeconvolution/data/MOBSP.h5ad -o results/cell_type_deconvolution/SpaGFT/MOBSP.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Select jobs to execute...
+
+[Sat Jul 15 15:50:34 2023]
+rule run_SPARK:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/CellTypeDeconvolution/data/MOBSP.h5ad
+    output: results/cell_type_deconvolution/SPARK/MOBSP.csv
+    jobid: 3
+    benchmark: benchmarks/cell_type_deconvolution/SPARK/MOBSP.txt
+    reason: Missing output files: results/cell_type_deconvolution/SPARK/MOBSP.csv
+    wildcards: dataset=MOBSP
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: SPARK
+[Sat Jul 15 15:50:51 2023]
+Finished job 2.
+2 of 13 steps (15%) done
+Select jobs to execute...
+
+[Sat Jul 15 15:50:51 2023]
+rule run_SOMDE:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/CellTypeDeconvolution/data/MOBSP.h5ad
+    output: results/cell_type_deconvolution/SOMDE/MOBSP.csv
+    jobid: 6
+    benchmark: benchmarks/cell_type_deconvolution/SOMDE/MOBSP.txt
+    reason: Missing output files: results/cell_type_deconvolution/SOMDE/MOBSP.csv
+    wildcards: dataset=MOBSP
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: SOMDE
+[Sat Jul 15 15:50:55 2023]
+Finished job 3.
+3 of 13 steps (23%) done
+Select jobs to execute...
+
+[Sat Jul 15 15:50:55 2023]
+rule run_SpaGCN:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/CellTypeDeconvolution/data/MOBSP.h5ad
+    output: results/cell_type_deconvolution/SpaGCN/MOBSP.csv
+    jobid: 9
+    benchmark: benchmarks/cell_type_deconvolution/SpaGCN/MOBSP.txt
+    reason: Missing output files: results/cell_type_deconvolution/SpaGCN/MOBSP.csv
+    wildcards: dataset=MOBSP
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: SpaGCN
+[Sat Jul 15 15:50:58 2023]
+Finished job 1.
+4 of 13 steps (31%) done
+Select jobs to execute...
+
+[Sat Jul 15 15:50:58 2023]
+rule run_SpatialDE2:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/CellTypeDeconvolution/data/MOBSP.h5ad
+    output: results/cell_type_deconvolution/SpatialDE2/MOBSP.csv
+    jobid: 4
+    benchmark: benchmarks/cell_type_deconvolution/SpatialDE2/MOBSP.txt
+    reason: Missing output files: results/cell_type_deconvolution/SpatialDE2/MOBSP.csv
+    wildcards: dataset=MOBSP
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: SpatialDE2
+[Sat Jul 15 15:50:59 2023]
+Error in rule run_scGCO:
+    jobid: 8
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/CellTypeDeconvolution/data/MOBSP.h5ad
+    output: results/cell_type_deconvolution/scGCO/MOBSP.csv
+    conda-env: scGCO
+    shell:
+        python scripts/cell_type_deconvolution/run_scGCO.py -i /data/pinello/PROJECTS/2023_03_SVGBenchmarking/CellTypeDeconvolution/data/MOBSP.h5ad -o results/cell_type_deconvolution/scGCO/MOBSP.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sat Jul 15 15:51:01 2023]
+Error in rule run_GPcounts:
+    jobid: 11
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/CellTypeDeconvolution/data/MOBSP.h5ad
+    output: results/cell_type_deconvolution/GPcounts/MOBSP.csv
+    conda-env: GPcounts-GPU
+    shell:
+        python scripts/cell_type_deconvolution/run_GPcounts.py -i /data/pinello/PROJECTS/2023_03_SVGBenchmarking/CellTypeDeconvolution/data/MOBSP.h5ad -o results/cell_type_deconvolution/GPcounts/MOBSP.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sat Jul 15 15:51:08 2023]
+Error in rule run_SOMDE:
+    jobid: 6
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/CellTypeDeconvolution/data/MOBSP.h5ad
+    output: results/cell_type_deconvolution/SOMDE/MOBSP.csv
+    conda-env: SOMDE
+    shell:
+        python scripts/cell_type_deconvolution/run_SOMDE.py -i /data/pinello/PROJECTS/2023_03_SVGBenchmarking/CellTypeDeconvolution/data/MOBSP.h5ad -o results/cell_type_deconvolution/SOMDE/MOBSP.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sat Jul 15 15:51:29 2023]
+Finished job 9.
+5 of 13 steps (38%) done
+[Sat Jul 15 15:51:39 2023]
+Finished job 4.
+6 of 13 steps (46%) done
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-07-15T155010.361451.snakemake.log

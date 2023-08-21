@@ -1,0 +1,84 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job             count    min threads    max threads
+------------  -------  -------------  -------------
+all                 1              1              1
+run_GPcounts        1              1              1
+run_Sepal           1              1              1
+run_SpaGFT          1              1              1
+total               4              1              1
+
+Select jobs to execute...
+
+[Sun Jul 16 13:15:44 2023]
+rule run_Sepal:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/CellTypeDeconvolution/data/MOBSP.h5ad
+    output: results/cell_type_deconvolution/Sepal/MOBSP.csv
+    jobid: 12
+    benchmark: benchmarks/cell_type_deconvolution/Sepal/MOBSP.txt
+    reason: Missing output files: results/cell_type_deconvolution/Sepal/MOBSP.csv
+    wildcards: dataset=MOBSP
+    resources: tmpdir=/tmp
+
+Activating conda environment: zl_svg
+[Sun Jul 16 13:15:52 2023]
+Error in rule run_Sepal:
+    jobid: 12
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/CellTypeDeconvolution/data/MOBSP.h5ad
+    output: results/cell_type_deconvolution/Sepal/MOBSP.csv
+    conda-env: zl_svg
+    shell:
+        python scripts/cell_type_deconvolution/run_Sepal.py -i /data/pinello/PROJECTS/2023_03_SVGBenchmarking/CellTypeDeconvolution/data/MOBSP.h5ad -o results/cell_type_deconvolution/Sepal/MOBSP.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Select jobs to execute...
+
+[Sun Jul 16 13:15:52 2023]
+rule run_GPcounts:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/CellTypeDeconvolution/data/MOBSP.h5ad
+    output: results/cell_type_deconvolution/GPcounts/MOBSP.csv
+    jobid: 11
+    benchmark: benchmarks/cell_type_deconvolution/GPcounts/MOBSP.txt
+    reason: Missing output files: results/cell_type_deconvolution/GPcounts/MOBSP.csv
+    wildcards: dataset=MOBSP
+    resources: tmpdir=/tmp
+
+Activating conda environment: GPcounts-GPU
+[Sun Jul 16 13:35:22 2023]
+Error in rule run_GPcounts:
+    jobid: 11
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/CellTypeDeconvolution/data/MOBSP.h5ad
+    output: results/cell_type_deconvolution/GPcounts/MOBSP.csv
+    conda-env: GPcounts-GPU
+    shell:
+        python scripts/cell_type_deconvolution/run_GPcounts.py -i /data/pinello/PROJECTS/2023_03_SVGBenchmarking/CellTypeDeconvolution/data/MOBSP.h5ad -o results/cell_type_deconvolution/GPcounts/MOBSP.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Select jobs to execute...
+
+[Sun Jul 16 13:35:22 2023]
+rule run_SpaGFT:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/CellTypeDeconvolution/data/MOBSP.h5ad
+    output: results/cell_type_deconvolution/SpaGFT/MOBSP.csv
+    jobid: 10
+    benchmark: benchmarks/cell_type_deconvolution/SpaGFT/MOBSP.txt
+    reason: Missing output files: results/cell_type_deconvolution/SpaGFT/MOBSP.csv
+    wildcards: dataset=MOBSP
+    resources: tmpdir=/tmp
+
+Activating conda environment: SpaGFT
+[Sun Jul 16 13:35:42 2023]
+Error in rule run_SpaGFT:
+    jobid: 10
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/CellTypeDeconvolution/data/MOBSP.h5ad
+    output: results/cell_type_deconvolution/SpaGFT/MOBSP.csv
+    conda-env: SpaGFT
+    shell:
+        python scripts/cell_type_deconvolution/run_SpaGFT.py -i /data/pinello/PROJECTS/2023_03_SVGBenchmarking/CellTypeDeconvolution/data/MOBSP.h5ad -o results/cell_type_deconvolution/SpaGFT/MOBSP.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-07-16T131530.167160.snakemake.log

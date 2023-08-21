@@ -1,0 +1,636 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 10
+Rules claiming more threads will be scaled down.
+Job stats:
+job          count    min threads    max threads
+---------  -------  -------------  -------------
+all              1              1              1
+run_SPARK        5             10             10
+total            6              1             10
+
+Select jobs to execute...
+
+[Sun Jul 16 15:13:14 2023]
+rule run_SPARK:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/SpatialATAC/ProcessedData/AnnData/Enric_NBT_2023/E15_5_rep2.h5ad
+    output: results/spatial_atac/SPARK/E15_5_rep2.csv
+    jobid: 5
+    benchmark: benchmarks/spatial_atac/SPARK/E15_5_rep2.txt
+    reason: Missing output files: results/spatial_atac/SPARK/E15_5_rep2.csv
+    wildcards: dataset=E15_5_rep2
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: SPARK
+Warning message:
+In asMethod(object) :
+  sparse->dense coercion: allocating vector of size 1.7 GiB
+## ===== SPARK INPUT INFORMATION ==== 
+## number of total samples:  3903 
+## number of total features:  58808 
+## number of adjusted covariates:  0 
+# fitting count-based spatial model under the null hypothesis ... 
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+## testing Gaussian kernel: 1...
+Error in { : task 4736 failed - "argument is of length zero"
+Calls: spark.test -> spark.test_each -> %dopar% -> <Anonymous>
+Execution halted
+[Sun Jul 16 21:48:05 2023]
+Error in rule run_SPARK:
+    jobid: 5
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/SpatialATAC/ProcessedData/AnnData/Enric_NBT_2023/E15_5_rep2.h5ad
+    output: results/spatial_atac/SPARK/E15_5_rep2.csv
+    conda-env: SPARK
+    shell:
+        Rscript scripts/spatial_atac/run_SPARK.R -i /data/pinello/PROJECTS/2023_03_SVGBenchmarking/SpatialATAC/ProcessedData/AnnData/Enric_NBT_2023/E15_5_rep2.h5ad -o results/spatial_atac/SPARK/E15_5_rep2.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Select jobs to execute...
+
+[Sun Jul 16 21:48:06 2023]
+rule run_SPARK:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/SpatialATAC/ProcessedData/AnnData/Enric_NBT_2023/E13_5_rep2.h5ad
+    output: results/spatial_atac/SPARK/E13_5_rep2.csv
+    jobid: 3
+    benchmark: benchmarks/spatial_atac/SPARK/E13_5_rep2.txt
+    reason: Missing output files: results/spatial_atac/SPARK/E13_5_rep2.csv
+    wildcards: dataset=E13_5_rep2
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: SPARK
+## ===== SPARK INPUT INFORMATION ==== 
+## number of total samples:  2970 
+## number of total features:  31099 
+## number of adjusted covariates:  0 
+# fitting count-based spatial model under the null hypothesis ... 
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+## testing Gaussian kernel: 1...
+Error in { : task 725 failed - "argument is of length zero"
+Calls: spark.test -> spark.test_each -> %dopar% -> <Anonymous>
+Execution halted
+[Mon Jul 17 00:30:37 2023]
+Error in rule run_SPARK:
+    jobid: 3
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/SpatialATAC/ProcessedData/AnnData/Enric_NBT_2023/E13_5_rep2.h5ad
+    output: results/spatial_atac/SPARK/E13_5_rep2.csv
+    conda-env: SPARK
+    shell:
+        Rscript scripts/spatial_atac/run_SPARK.R -i /data/pinello/PROJECTS/2023_03_SVGBenchmarking/SpatialATAC/ProcessedData/AnnData/Enric_NBT_2023/E13_5_rep2.h5ad -o results/spatial_atac/SPARK/E13_5_rep2.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Select jobs to execute...
+
+[Mon Jul 17 00:30:38 2023]
+rule run_SPARK:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/SpatialATAC/ProcessedData/AnnData/Enric_NBT_2023/E15_5_rep1.h5ad
+    output: results/spatial_atac/SPARK/E15_5_rep1.csv
+    jobid: 4
+    benchmark: benchmarks/spatial_atac/SPARK/E15_5_rep1.txt
+    reason: Missing output files: results/spatial_atac/SPARK/E15_5_rep1.csv
+    wildcards: dataset=E15_5_rep1
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: SPARK
+Warning message:
+In asMethod(object) :
+  sparse->dense coercion: allocating vector of size 1.7 GiB
+## ===== SPARK INPUT INFORMATION ==== 
+## number of total samples:  3274 
+## number of total features:  69896 
+## number of adjusted covariates:  0 
+# fitting count-based spatial model under the null hypothesis ... 
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+## testing Gaussian kernel: 1...
+Error in { : task 1044 failed - "argument is of length zero"
+Calls: spark.test -> spark.test_each -> %dopar% -> <Anonymous>
+Execution halted
+[Mon Jul 17 06:29:14 2023]
+Error in rule run_SPARK:
+    jobid: 4
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/SpatialATAC/ProcessedData/AnnData/Enric_NBT_2023/E15_5_rep1.h5ad
+    output: results/spatial_atac/SPARK/E15_5_rep1.csv
+    conda-env: SPARK
+    shell:
+        Rscript scripts/spatial_atac/run_SPARK.R -i /data/pinello/PROJECTS/2023_03_SVGBenchmarking/SpatialATAC/ProcessedData/AnnData/Enric_NBT_2023/E15_5_rep1.h5ad -o results/spatial_atac/SPARK/E15_5_rep1.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Select jobs to execute...
+
+[Mon Jul 17 06:29:15 2023]
+rule run_SPARK:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/SpatialATAC/ProcessedData/AnnData/Enric_NBT_2023/E12_5_rep1.h5ad
+    output: results/spatial_atac/SPARK/E12_5_rep1.csv
+    jobid: 1
+    benchmark: benchmarks/spatial_atac/SPARK/E12_5_rep1.txt
+    reason: Missing output files: results/spatial_atac/SPARK/E12_5_rep1.csv
+    wildcards: dataset=E12_5_rep1
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: SPARK
+## ===== SPARK INPUT INFORMATION ==== 
+## number of total samples:  2246 
+## number of total features:  34460 
+## number of adjusted covariates:  0 
+# fitting count-based spatial model under the null hypothesis ... 
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+## testing Gaussian kernel: 1...
+Error in { : task 816 failed - "argument is of length zero"
+Calls: spark.test -> spark.test_each -> %dopar% -> <Anonymous>
+Execution halted
+[Mon Jul 17 09:41:28 2023]
+Error in rule run_SPARK:
+    jobid: 1
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/SpatialATAC/ProcessedData/AnnData/Enric_NBT_2023/E12_5_rep1.h5ad
+    output: results/spatial_atac/SPARK/E12_5_rep1.csv
+    conda-env: SPARK
+    shell:
+        Rscript scripts/spatial_atac/run_SPARK.R -i /data/pinello/PROJECTS/2023_03_SVGBenchmarking/SpatialATAC/ProcessedData/AnnData/Enric_NBT_2023/E12_5_rep1.h5ad -o results/spatial_atac/SPARK/E12_5_rep1.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Select jobs to execute...
+
+[Mon Jul 17 09:41:28 2023]
+rule run_SPARK:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/SpatialATAC/ProcessedData/AnnData/Enric_NBT_2023/E12_5_rep2.h5ad
+    output: results/spatial_atac/SPARK/E12_5_rep2.csv
+    jobid: 2
+    benchmark: benchmarks/spatial_atac/SPARK/E12_5_rep2.txt
+    reason: Missing output files: results/spatial_atac/SPARK/E12_5_rep2.csv
+    wildcards: dataset=E12_5_rep2
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: SPARK
+## ===== SPARK INPUT INFORMATION ==== 
+## number of total samples:  2234 
+## number of total features:  26130 
+## number of adjusted covariates:  0 
+# fitting count-based spatial model under the null hypothesis ... 
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+Error in spark.ai(model0, num_vc, fixtau = fixtau.old, maxiter = maxiter,  : 
+  object 'Py' not found
+In addition: Warning message:
+In model1$converged <- FALSE : Coercing LHS to a list
+## testing Gaussian kernel: 1...
+Error in { : task 80 failed - "argument is of length zero"
+Calls: spark.test -> spark.test_each -> %dopar% -> <Anonymous>
+Execution halted
+[Mon Jul 17 11:54:45 2023]
+Error in rule run_SPARK:
+    jobid: 2
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/SpatialATAC/ProcessedData/AnnData/Enric_NBT_2023/E12_5_rep2.h5ad
+    output: results/spatial_atac/SPARK/E12_5_rep2.csv
+    conda-env: SPARK
+    shell:
+        Rscript scripts/spatial_atac/run_SPARK.R -i /data/pinello/PROJECTS/2023_03_SVGBenchmarking/SpatialATAC/ProcessedData/AnnData/Enric_NBT_2023/E12_5_rep2.h5ad -o results/spatial_atac/SPARK/E12_5_rep2.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-07-16T151312.210178.snakemake.log

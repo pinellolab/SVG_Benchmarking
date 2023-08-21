@@ -1,0 +1,40 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job           count    min threads    max threads
+----------  -------  -------------  -------------
+all               1              1              1
+run_Spanve        1              1              1
+total             2              1              1
+
+Select jobs to execute...
+
+[Fri Jul 14 13:24:41 2023]
+rule run_Spanve:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/SpatialATAC/ProcessedData/AnnData/Deng_Nature_2022/ME13_50um_2.h5ad
+    output: results/spatial_atac/Spanve/ME13_50um_2.csv
+    jobid: 1
+    benchmark: benchmarks/spatial_atac/Spanve/ME13_50um_2.txt
+    reason: Missing output files: results/spatial_atac/Spanve/ME13_50um_2.csv; Updated input files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/SpatialATAC/ProcessedData/AnnData/Deng_Nature_2022/ME13_50um_2.h5ad
+    wildcards: dataset=ME13_50um_2
+    resources: tmpdir=/tmp
+
+Activating conda environment: Spanve
+[Fri Jul 14 13:28:33 2023]
+Finished job 1.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Fri Jul 14 13:28:33 2023]
+localrule all:
+    input: results/spatial_atac/Spanve/ME13_50um_2.csv
+    jobid: 0
+    reason: Input files updated by another job: results/spatial_atac/Spanve/ME13_50um_2.csv
+    resources: tmpdir=/tmp
+
+[Fri Jul 14 13:28:33 2023]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: .snakemake/log/2023-07-14T132440.443915.snakemake.log

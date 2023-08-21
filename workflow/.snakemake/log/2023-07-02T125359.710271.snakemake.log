@@ -1,0 +1,49 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 200
+Rules claiming more threads will be scaled down.
+Job stats:
+job                           count    min threads    max threads
+--------------------------  -------  -------------  -------------
+all                               1              1              1
+run_BOOST_GP_covariance_v2       24            100            100
+total                            25              1            100
+
+Select jobs to execute...
+
+[Sun Jul  2 12:54:02 2023]
+rule run_BOOST_GP_covariance_v2:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/SimulationData/Covariance_v2/sigma_1.0_alpha_0.6.h5ad
+    output: results/simulation_data/covariance_based/BOOST-GP-v2/sigma_1.0_alpha_0.6.csv
+    jobid: 9
+    benchmark: benchmarks/simulation_data/covariance_based/BOOST-GP-v2/sigma_1.0_alpha_0.6.txt
+    reason: Missing output files: results/simulation_data/covariance_based/BOOST-GP-v2/sigma_1.0_alpha_0.6.csv
+    wildcards: sigma=1.0, alpha=0.6
+    threads: 100
+    resources: tmpdir=/tmp
+
+
+[Sun Jul  2 12:54:02 2023]
+rule run_BOOST_GP_covariance_v2:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/SimulationData/Covariance_v2/sigma_1.5_alpha_0.8.h5ad
+    output: results/simulation_data/covariance_based/BOOST-GP-v2/sigma_1.5_alpha_0.8.csv
+    jobid: 15
+    benchmark: benchmarks/simulation_data/covariance_based/BOOST-GP-v2/sigma_1.5_alpha_0.8.txt
+    reason: Missing output files: results/simulation_data/covariance_based/BOOST-GP-v2/sigma_1.5_alpha_0.8.csv
+    wildcards: sigma=1.5, alpha=0.8
+    threads: 100
+    resources: tmpdir=/tmp
+
+Activating conda environment: BOOST-GP
+Activating conda environment: BOOST-GP
+Will exit after finishing currently running jobs (scheduler).
+[Wed Jul  5 04:55:57 2023]
+Finished job 15.
+1 of 25 steps (4%) done
+Will exit after finishing currently running jobs (scheduler).
+[Fri Jul  7 09:09:38 2023]
+Finished job 9.
+2 of 25 steps (8%) done
+Will exit after finishing currently running jobs (scheduler).
+Shutting down, this might take some time.
+Complete log: .snakemake/log/2023-07-02T125359.710271.snakemake.log

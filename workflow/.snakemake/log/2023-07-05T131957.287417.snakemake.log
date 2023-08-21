@@ -1,0 +1,45 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 50
+Rules claiming more threads will be scaled down.
+Job stats:
+job               count    min threads    max threads
+--------------  -------  -------------  -------------
+all                   1              1              1
+run_BOOSTGP_v2       11             50             50
+total                12              1             50
+
+Select jobs to execute...
+
+[Wed Jul  5 13:19:59 2023]
+rule run_BOOSTGP_v2:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/RealWorldDataSVGs/data/151510.h5ad
+    output: results/real_data_shuffle/BOOST-GP-v2/151510.csv
+    jobid: 4
+    benchmark: benchmarks/real_data_shuffle/BOOST-GP-v2/151510.txt
+    reason: Missing output files: results/real_data_shuffle/BOOST-GP-v2/151510.csv
+    wildcards: dataset=151510
+    threads: 50
+    resources: tmpdir=/tmp
+
+Activating conda environment: BOOST-GP
+Will exit after finishing currently running jobs (scheduler).
+Will exit after finishing currently running jobs (scheduler).
+Will exit after finishing currently running jobs (scheduler).
+Will exit after finishing currently running jobs (scheduler).
+Will exit after finishing currently running jobs (scheduler).
+Will exit after finishing currently running jobs (scheduler).
+Will exit after finishing currently running jobs (scheduler).
+[Mon Jul 10 21:13:06 2023]
+Error in rule run_BOOSTGP_v2:
+    jobid: 4
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/RealWorldDataSVGs/data/151510.h5ad
+    output: results/real_data_shuffle/BOOST-GP-v2/151510.csv
+    conda-env: BOOST-GP
+    shell:
+        Rscript scripts/real_data_shuffle/run_BOOST-GP-v2.R -i /data/pinello/PROJECTS/2023_03_SVGBenchmarking/RealWorldDataSVGs/data/151510.h5ad -o results/real_data_shuffle/BOOST-GP-v2/151510.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Will exit after finishing currently running jobs (scheduler).
+Shutting down, this might take some time.
+Complete log: .snakemake/log/2023-07-05T131957.287417.snakemake.log

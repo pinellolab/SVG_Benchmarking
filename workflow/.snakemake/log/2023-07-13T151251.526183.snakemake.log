@@ -1,0 +1,75 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 30
+Rules claiming more threads will be scaled down.
+Job stats:
+job           count    min threads    max threads
+----------  -------  -------------  -------------
+all               1              1              1
+run_SPARKX        1             10             10
+run_Spanve        1             10             10
+run_nnSVG         1             10             10
+total             4              1             10
+
+Select jobs to execute...
+
+[Thu Jul 13 15:13:00 2023]
+rule run_nnSVG:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/SpatialATAC/ProcessedData/AnnData/Deng_Nature_2022/ME13_50um_2.h5ad
+    output: results/spatial_atac/nnSVG/ME13_50um_2.csv
+    jobid: 1
+    benchmark: benchmarks/spatial_atac/nnSVG/ME13_50um_2.txt
+    reason: Missing output files: results/spatial_atac/nnSVG/ME13_50um_2.csv
+    wildcards: dataset=ME13_50um_2
+    threads: 10
+    resources: tmpdir=/tmp
+
+
+[Thu Jul 13 15:13:00 2023]
+rule run_Spanve:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/SpatialATAC/ProcessedData/AnnData/Deng_Nature_2022/ME13_50um_2.h5ad
+    output: results/spatial_atac/Spanve/ME13_50um_2.csv
+    jobid: 2
+    benchmark: benchmarks/spatial_atac/Spanve/ME13_50um_2.txt
+    reason: Missing output files: results/spatial_atac/Spanve/ME13_50um_2.csv
+    wildcards: dataset=ME13_50um_2
+    threads: 10
+    resources: tmpdir=/tmp
+
+
+[Thu Jul 13 15:13:00 2023]
+rule run_SPARKX:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/SpatialATAC/ProcessedData/AnnData/Deng_Nature_2022/ME13_50um_2.h5ad
+    output: results/spatial_atac/SPARK-X/ME13_50um_2.csv
+    jobid: 3
+    benchmark: benchmarks/spatial_atac/SPARK-X/ME13_50um_2.txt
+    reason: Missing output files: results/spatial_atac/SPARK-X/ME13_50um_2.csv
+    wildcards: dataset=ME13_50um_2
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: nnSVG
+Activating conda environment: Spanve
+Activating conda environment: SPARK
+Terminating processes on user request, this might take some time.
+[Thu Jul 13 15:13:28 2023]
+Error in rule run_nnSVG:
+    jobid: 1
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/SpatialATAC/ProcessedData/AnnData/Deng_Nature_2022/ME13_50um_2.h5ad
+    output: results/spatial_atac/nnSVG/ME13_50um_2.csv
+    conda-env: nnSVG
+    shell:
+        Rscript scripts/spatial_atac/run_nnSVG.R -i /data/pinello/PROJECTS/2023_03_SVGBenchmarking/SpatialATAC/ProcessedData/AnnData/Deng_Nature_2022/ME13_50um_2.h5ad -o results/spatial_atac/nnSVG/ME13_50um_2.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Jul 13 15:13:28 2023]
+Error in rule run_SPARKX:
+    jobid: 3
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/SpatialATAC/ProcessedData/AnnData/Deng_Nature_2022/ME13_50um_2.h5ad
+    output: results/spatial_atac/SPARK-X/ME13_50um_2.csv
+    conda-env: SPARK
+    shell:
+        Rscript scripts/spatial_atac/run_SPARK-X.R -i /data/pinello/PROJECTS/2023_03_SVGBenchmarking/SpatialATAC/ProcessedData/AnnData/Deng_Nature_2022/ME13_50um_2.h5ad -o results/spatial_atac/SPARK-X/ME13_50um_2.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Cancelling snakemake on user request.
