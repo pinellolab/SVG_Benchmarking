@@ -1,0 +1,1094 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 100
+Rules claiming more threads will be scaled down.
+Job stats:
+job           count
+----------  -------
+Banksy           14
+BayesSpace       10
+Kmeans           18
+Leiden           19
+all               1
+total            62
+
+Select jobs to execute...
+
+[Thu Jun 27 15:43:52 2024]
+rule Banksy:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151507.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151507_1500.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Banksy/Spanve/151507_1500.csv
+    jobid: 147
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Banksy/Spanve/151507_1500.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Banksy/Spanve/151507_1500.csv
+    wildcards: svg_method=Spanve, dataset=151507, n_genes=1500
+    threads: 5
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+
+[Thu Jun 27 15:43:52 2024]
+rule BayesSpace:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151510.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151510_1000.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/BayesSpace/Spanve/151510_1000.csv
+    jobid: 110
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/BayesSpace/Spanve/151510_1000.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/BayesSpace/Spanve/151510_1000.csv
+    wildcards: svg_method=Spanve, dataset=151510, n_genes=1000
+    threads: 5
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+
+[Thu Jun 27 15:43:52 2024]
+rule Banksy:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151671.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151671_1500.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Banksy/Spanve/151671_1500.csv
+    jobid: 171
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Banksy/Spanve/151671_1500.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Banksy/Spanve/151671_1500.csv
+    wildcards: svg_method=Spanve, dataset=151671, n_genes=1500
+    threads: 5
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+
+[Thu Jun 27 15:43:52 2024]
+rule Banksy:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151673.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151673_1500.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Banksy/Spanve/151673_1500.csv
+    jobid: 179
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Banksy/Spanve/151673_1500.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Banksy/Spanve/151673_1500.csv
+    wildcards: svg_method=Spanve, dataset=151673, n_genes=1500
+    threads: 5
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+
+[Thu Jun 27 15:43:53 2024]
+rule BayesSpace:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151676.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151676_1500.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/BayesSpace/Spanve/151676_1500.csv
+    jobid: 143
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/BayesSpace/Spanve/151676_1500.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/BayesSpace/Spanve/151676_1500.csv
+    wildcards: svg_method=Spanve, dataset=151676, n_genes=1500
+    threads: 5
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+
+[Thu Jun 27 15:43:53 2024]
+rule Banksy:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151672.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151672_500.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Banksy/Spanve/151672_500.csv
+    jobid: 173
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Banksy/Spanve/151672_500.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Banksy/Spanve/151672_500.csv
+    wildcards: svg_method=Spanve, dataset=151672, n_genes=500
+    threads: 5
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+
+[Thu Jun 27 15:43:53 2024]
+rule BayesSpace:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151674.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151674_2000.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/BayesSpace/Spanve/151674_2000.csv
+    jobid: 136
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/BayesSpace/Spanve/151674_2000.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/BayesSpace/Spanve/151674_2000.csv
+    wildcards: svg_method=Spanve, dataset=151674, n_genes=2000
+    threads: 5
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+
+[Thu Jun 27 15:43:53 2024]
+rule Banksy:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151674.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151674_500.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Banksy/Spanve/151674_500.csv
+    jobid: 181
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Banksy/Spanve/151674_500.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Banksy/Spanve/151674_500.csv
+    wildcards: svg_method=Spanve, dataset=151674, n_genes=500
+    threads: 5
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+
+[Thu Jun 27 15:43:53 2024]
+rule BayesSpace:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151509.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151509_1000.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/BayesSpace/Spanve/151509_1000.csv
+    jobid: 106
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/BayesSpace/Spanve/151509_1000.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/BayesSpace/Spanve/151509_1000.csv
+    wildcards: svg_method=Spanve, dataset=151509, n_genes=1000
+    threads: 5
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+
+[Thu Jun 27 15:43:53 2024]
+rule Banksy:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151670.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151670_1000.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Banksy/Spanve/151670_1000.csv
+    jobid: 166
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Banksy/Spanve/151670_1000.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Banksy/Spanve/151670_1000.csv
+    wildcards: svg_method=Spanve, dataset=151670, n_genes=1000
+    threads: 5
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+
+[Thu Jun 27 15:43:53 2024]
+rule BayesSpace:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151676.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151676_2000.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/BayesSpace/Spanve/151676_2000.csv
+    jobid: 144
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/BayesSpace/Spanve/151676_2000.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/BayesSpace/Spanve/151676_2000.csv
+    wildcards: svg_method=Spanve, dataset=151676, n_genes=2000
+    threads: 5
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+
+[Thu Jun 27 15:43:53 2024]
+rule Banksy:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151674.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151674_1000.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Banksy/Spanve/151674_1000.csv
+    jobid: 182
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Banksy/Spanve/151674_1000.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Banksy/Spanve/151674_1000.csv
+    wildcards: svg_method=Spanve, dataset=151674, n_genes=1000
+    threads: 5
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+
+[Thu Jun 27 15:43:53 2024]
+rule Banksy:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151670.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151670_1500.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Banksy/Spanve/151670_1500.csv
+    jobid: 167
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Banksy/Spanve/151670_1500.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Banksy/Spanve/151670_1500.csv
+    wildcards: svg_method=Spanve, dataset=151670, n_genes=1500
+    threads: 5
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+
+[Thu Jun 27 15:43:53 2024]
+rule BayesSpace:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151671.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151671_1000.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/BayesSpace/Spanve/151671_1000.csv
+    jobid: 122
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/BayesSpace/Spanve/151671_1000.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/BayesSpace/Spanve/151671_1000.csv
+    wildcards: svg_method=Spanve, dataset=151671, n_genes=1000
+    threads: 5
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+
+[Thu Jun 27 15:43:53 2024]
+rule BayesSpace:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151509.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151509_1500.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/BayesSpace/Spanve/151509_1500.csv
+    jobid: 107
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/BayesSpace/Spanve/151509_1500.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/BayesSpace/Spanve/151509_1500.csv
+    wildcards: svg_method=Spanve, dataset=151509, n_genes=1500
+    threads: 5
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+
+[Thu Jun 27 15:43:53 2024]
+rule Banksy:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151508.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151508_2000.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Banksy/Spanve/151508_2000.csv
+    jobid: 152
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Banksy/Spanve/151508_2000.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Banksy/Spanve/151508_2000.csv
+    wildcards: svg_method=Spanve, dataset=151508, n_genes=2000
+    threads: 5
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_Banksy
+Activating conda environment: zl_Banksy
+
+[Thu Jun 27 15:43:53 2024]
+rule BayesSpace:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151671.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151671_1500.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/BayesSpace/Spanve/151671_1500.csv
+    jobid: 123
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/BayesSpace/Spanve/151671_1500.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/BayesSpace/Spanve/151671_1500.csv
+    wildcards: svg_method=Spanve, dataset=151671, n_genes=1500
+    threads: 5
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_BayesSpace
+
+[Thu Jun 27 15:43:53 2024]
+rule Banksy:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151674.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151674_1500.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Banksy/Spanve/151674_1500.csv
+    jobid: 183
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Banksy/Spanve/151674_1500.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Banksy/Spanve/151674_1500.csv
+    wildcards: svg_method=Spanve, dataset=151674, n_genes=1500
+    threads: 5
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_BayesSpace
+Activating conda environment: zl_Banksy
+Activating conda environment: zl_Banksy
+
+[Thu Jun 27 15:43:53 2024]
+rule Banksy:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151674.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151674_2000.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Banksy/Spanve/151674_2000.csv
+    jobid: 184
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Banksy/Spanve/151674_2000.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Banksy/Spanve/151674_2000.csv
+    wildcards: svg_method=Spanve, dataset=151674, n_genes=2000
+    threads: 5
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_Banksy
+
+Activating conda environment: zl_Banksy
+[Thu Jun 27 15:43:53 2024]
+rule BayesSpace:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151510.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151510_500.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/BayesSpace/Spanve/151510_500.csv
+    jobid: 109
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/BayesSpace/Spanve/151510_500.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/BayesSpace/Spanve/151510_500.csv
+    wildcards: svg_method=Spanve, dataset=151510, n_genes=500
+    threads: 5
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_BayesSpace
+Activating conda environment: zl_BayesSpace
+Activating conda environment: zl_BayesSpace
+Activating conda environment: zl_Banksy
+Activating conda environment: zl_Banksy
+Activating conda environment: zl_Banksy
+Activating conda environment: zl_BayesSpace
+Activating conda environment: zl_Banksy
+Activating conda environment: zl_Banksy
+Activating conda environment: zl_BayesSpace
+Activating conda environment: zl_BayesSpace
+Activating conda environment: zl_BayesSpace
+[Thu Jun 27 15:44:41 2024]
+Finished job 166.
+1 of 62 steps (2%) done
+Select jobs to execute...
+
+[Thu Jun 27 15:44:41 2024]
+rule Banksy:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151671.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151671_500.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Banksy/Spanve/151671_500.csv
+    jobid: 169
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Banksy/Spanve/151671_500.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Banksy/Spanve/151671_500.csv
+    wildcards: svg_method=Spanve, dataset=151671, n_genes=500
+    threads: 5
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_Banksy
+[Thu Jun 27 15:44:41 2024]
+Finished job 181.
+2 of 62 steps (3%) done
+Select jobs to execute...
+
+[Thu Jun 27 15:44:51 2024]
+rule Banksy:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151671.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151671_1000.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Banksy/Spanve/151671_1000.csv
+    jobid: 170
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Banksy/Spanve/151671_1000.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Banksy/Spanve/151671_1000.csv
+    wildcards: svg_method=Spanve, dataset=151671, n_genes=1000
+    threads: 5
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_Banksy
+[Thu Jun 27 15:44:51 2024]
+Finished job 173.
+3 of 62 steps (5%) done
+Select jobs to execute...
+
+[Thu Jun 27 15:44:51 2024]
+rule Banksy:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151672.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151672_1000.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Banksy/Spanve/151672_1000.csv
+    jobid: 174
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Banksy/Spanve/151672_1000.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Banksy/Spanve/151672_1000.csv
+    wildcards: svg_method=Spanve, dataset=151672, n_genes=1000
+    threads: 5
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_Banksy
+[Thu Jun 27 15:44:51 2024]
+Finished job 167.
+4 of 62 steps (6%) done
+[Thu Jun 27 15:44:51 2024]
+Finished job 182.
+5 of 62 steps (8%) done
+[Thu Jun 27 15:44:51 2024]
+Finished job 179.
+6 of 62 steps (10%) done
+Select jobs to execute...
+
+[Thu Jun 27 15:44:51 2024]
+rule BayesSpace:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151675.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151675_1500.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/BayesSpace/Spanve/151675_1500.csv
+    jobid: 139
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/BayesSpace/Spanve/151675_1500.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/BayesSpace/Spanve/151675_1500.csv
+    wildcards: svg_method=Spanve, dataset=151675, n_genes=1500
+    threads: 5
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+
+Activating conda environment: zl_BayesSpace
+[Thu Jun 27 15:44:51 2024]
+rule Leiden:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151509.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151509_500.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151509_500.csv
+    jobid: 9
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Leiden/Spanve/151509_500.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151509_500.csv
+    wildcards: svg_method=Spanve, dataset=151509, n_genes=500
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Select jobs to execute...
+Activating conda environment: zl_leiden
+[Thu Jun 27 15:44:52 2024]
+Finished job 183.
+7 of 62 steps (11%) done
+[Thu Jun 27 15:44:53 2024]
+Finished job 171.
+8 of 62 steps (13%) done
+
+[Thu Jun 27 15:44:53 2024]
+rule Kmeans:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151670.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151670_500.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Kmeans/Spanve/151670_500.csv
+    jobid: 69
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Kmeans/Spanve/151670_500.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Kmeans/Spanve/151670_500.csv
+    wildcards: svg_method=Spanve, dataset=151670, n_genes=500
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_svg
+[Thu Jun 27 15:44:55 2024]
+Finished job 184.
+9 of 62 steps (15%) done
+Select jobs to execute...
+[Thu Jun 27 15:44:58 2024]
+Finished job 147.
+10 of 62 steps (16%) done
+
+[Thu Jun 27 15:44:58 2024]
+rule Leiden:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151674.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151674_1000.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151674_1000.csv
+    jobid: 38
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Leiden/Spanve/151674_1000.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151674_1000.csv
+    wildcards: svg_method=Spanve, dataset=151674, n_genes=1000
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_leiden
+[Thu Jun 27 15:44:59 2024]
+Finished job 152.
+11 of 62 steps (18%) done
+Select jobs to execute...
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Thu Jun 27 15:45:02 2024]
+Finished job 69.
+12 of 62 steps (19%) done
+
+[Thu Jun 27 15:45:02 2024]
+rule Leiden:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151674.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151674_1500.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151674_1500.csv
+    jobid: 39
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Leiden/Spanve/151674_1500.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151674_1500.csv
+    wildcards: svg_method=Spanve, dataset=151674, n_genes=1500
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_leiden
+[Thu Jun 27 15:45:09 2024]
+Finished job 9.
+13 of 62 steps (21%) done
+Select jobs to execute...
+
+[Thu Jun 27 15:45:09 2024]
+rule Kmeans:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151509.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151509_500.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Kmeans/Spanve/151509_500.csv
+    jobid: 57
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Kmeans/Spanve/151509_500.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Kmeans/Spanve/151509_500.csv
+    wildcards: svg_method=Spanve, dataset=151509, n_genes=500
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_svg
+[Thu Jun 27 15:45:14 2024]
+Finished job 38.
+14 of 62 steps (23%) done
+Select jobs to execute...
+
+[Thu Jun 27 15:45:14 2024]
+rule Leiden:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151669.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151669_2000.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151669_2000.csv
+    jobid: 20
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Leiden/Spanve/151669_2000.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151669_2000.csv
+    wildcards: svg_method=Spanve, dataset=151669, n_genes=2000
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_leiden
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Thu Jun 27 15:45:18 2024]
+Finished job 57.
+15 of 62 steps (24%) done
+Select jobs to execute...
+
+[Thu Jun 27 15:45:18 2024]
+rule Kmeans:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151672.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151672_2000.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Kmeans/Spanve/151672_2000.csv
+    jobid: 80
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Kmeans/Spanve/151672_2000.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Kmeans/Spanve/151672_2000.csv
+    wildcards: svg_method=Spanve, dataset=151672, n_genes=2000
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_svg
+[Thu Jun 27 15:45:19 2024]
+Finished job 39.
+16 of 62 steps (26%) done
+Select jobs to execute...
+
+[Thu Jun 27 15:45:19 2024]
+rule Kmeans:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151676.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151676_1500.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Kmeans/Spanve/151676_1500.csv
+    jobid: 95
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Kmeans/Spanve/151676_1500.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Kmeans/Spanve/151676_1500.csv
+    wildcards: svg_method=Spanve, dataset=151676, n_genes=1500
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_svg
+[Thu Jun 27 15:45:27 2024]
+Finished job 169.
+17 of 62 steps (27%) done
+Select jobs to execute...
+
+[Thu Jun 27 15:45:28 2024]
+rule Kmeans:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151509.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151509_1000.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Kmeans/Spanve/151509_1000.csv
+    jobid: 58
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Kmeans/Spanve/151509_1000.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Kmeans/Spanve/151509_1000.csv
+    wildcards: svg_method=Spanve, dataset=151509, n_genes=1000
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_svg
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Thu Jun 27 15:45:29 2024]
+Finished job 80.
+18 of 62 steps (29%) done
+Select jobs to execute...
+
+[Thu Jun 27 15:45:29 2024]
+rule Leiden:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151671.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151671_2000.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151671_2000.csv
+    jobid: 28
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Leiden/Spanve/151671_2000.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151671_2000.csv
+    wildcards: svg_method=Spanve, dataset=151671, n_genes=2000
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_leiden
+Benchmark: unable to collect cpu and memory benchmark statistics
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Thu Jun 27 15:45:51 2024]
+Finished job 95.
+19 of 62 steps (31%) done
+Select jobs to execute...
+
+[Thu Jun 27 15:45:51 2024]
+rule Kmeans:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151673.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151673_500.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Kmeans/Spanve/151673_500.csv
+    jobid: 81
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Kmeans/Spanve/151673_500.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Kmeans/Spanve/151673_500.csv
+    wildcards: svg_method=Spanve, dataset=151673, n_genes=500
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_svg
+[Thu Jun 27 15:45:51 2024]
+Finished job 20.
+20 of 62 steps (32%) done
+[Thu Jun 27 15:45:51 2024]
+Finished job 58.
+21 of 62 steps (34%) done
+Select jobs to execute...
+
+[Thu Jun 27 15:45:51 2024]
+rule Leiden:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151674.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151674_500.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151674_500.csv
+    jobid: 37
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Leiden/Spanve/151674_500.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151674_500.csv
+    wildcards: svg_method=Spanve, dataset=151674, n_genes=500
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_leiden
+
+[Thu Jun 27 15:45:51 2024]
+rule Leiden:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151669.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151669_1000.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151669_1000.csv
+    jobid: 18
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Leiden/Spanve/151669_1000.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151669_1000.csv
+    wildcards: svg_method=Spanve, dataset=151669, n_genes=1000
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_leiden
+[Thu Jun 27 15:45:51 2024]
+Finished job 170.
+22 of 62 steps (35%) done
+[Thu Jun 27 15:45:51 2024]
+Finished job 174.
+23 of 62 steps (37%) done
+Select jobs to execute...
+
+[Thu Jun 27 15:45:51 2024]
+rule Leiden:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151670.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151670_500.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151670_500.csv
+    jobid: 21
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Leiden/Spanve/151670_500.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151670_500.csv
+    wildcards: svg_method=Spanve, dataset=151670, n_genes=500
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Select jobs to execute...
+Activating conda environment: zl_leiden
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Thu Jun 27 15:46:02 2024]
+Finished job 81.
+24 of 62 steps (39%) done
+
+[Thu Jun 27 15:46:03 2024]
+rule Kmeans:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151507.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151507_1500.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Kmeans/Spanve/151507_1500.csv
+    jobid: 51
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Kmeans/Spanve/151507_1500.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Kmeans/Spanve/151507_1500.csv
+    wildcards: svg_method=Spanve, dataset=151507, n_genes=1500
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_svg
+[Thu Jun 27 15:46:05 2024]
+Error in rule Leiden:
+    jobid: 18
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151669.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151669_1000.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151669_1000.csv
+    conda-env: zl_leiden
+    shell:
+        python /data/pinello/PROJECTS/2023_03_SVGBenchmarking/scripts/05_snakemake_clustering/clustering_methods/run_Leiden.py --input_data /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151669.h5ad --input_genes /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151669_1000.csv -o /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151669_1000.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Select jobs to execute...
+[Thu Jun 27 15:46:05 2024]
+Error in rule Leiden:
+    jobid: 37
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151674.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151674_500.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151674_500.csv
+    conda-env: zl_leiden
+    shell:
+        python /data/pinello/PROJECTS/2023_03_SVGBenchmarking/scripts/05_snakemake_clustering/clustering_methods/run_Leiden.py --input_data /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151674.h5ad --input_genes /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151674_500.csv -o /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151674_500.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Thu Jun 27 15:46:05 2024]
+rule Leiden:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151510.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151510_1000.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151510_1000.csv
+    jobid: 14
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Leiden/Spanve/151510_1000.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151510_1000.csv
+    wildcards: svg_method=Spanve, dataset=151510, n_genes=1000
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_leiden
+Select jobs to execute...
+[Thu Jun 27 15:46:05 2024]
+Error in rule Leiden:
+    jobid: 21
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151670.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151670_500.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151670_500.csv
+    conda-env: zl_leiden
+    shell:
+        python /data/pinello/PROJECTS/2023_03_SVGBenchmarking/scripts/05_snakemake_clustering/clustering_methods/run_Leiden.py --input_data /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151670.h5ad --input_genes /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151670_500.csv -o /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151670_500.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Thu Jun 27 15:46:05 2024]
+rule Kmeans:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151509.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151509_1500.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Kmeans/Spanve/151509_1500.csv
+    jobid: 59
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Kmeans/Spanve/151509_1500.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Kmeans/Spanve/151509_1500.csv
+    wildcards: svg_method=Spanve, dataset=151509, n_genes=1500
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_svg
+Select jobs to execute...
+
+[Thu Jun 27 15:46:06 2024]
+rule Kmeans:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151675.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151675_500.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Kmeans/Spanve/151675_500.csv
+    jobid: 89
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Kmeans/Spanve/151675_500.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Kmeans/Spanve/151675_500.csv
+    wildcards: svg_method=Spanve, dataset=151675, n_genes=500
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_svg
+[Thu Jun 27 15:46:06 2024]
+Finished job 28.
+25 of 62 steps (40%) done
+Select jobs to execute...
+
+[Thu Jun 27 15:46:07 2024]
+rule Leiden:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151670.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151670_1000.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151670_1000.csv
+    jobid: 22
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Leiden/Spanve/151670_1000.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151670_1000.csv
+    wildcards: svg_method=Spanve, dataset=151670, n_genes=1000
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_leiden
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Thu Jun 27 15:46:17 2024]
+Finished job 51.
+26 of 62 steps (42%) done
+Select jobs to execute...
+
+[Thu Jun 27 15:46:17 2024]
+rule Leiden:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151674.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151674_2000.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151674_2000.csv
+    jobid: 40
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Leiden/Spanve/151674_2000.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151674_2000.csv
+    wildcards: svg_method=Spanve, dataset=151674, n_genes=2000
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_leiden
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Thu Jun 27 15:46:19 2024]
+Finished job 59.
+27 of 62 steps (44%) done
+Select jobs to execute...
+
+[Thu Jun 27 15:46:19 2024]
+rule Kmeans:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151672.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151672_1000.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Kmeans/Spanve/151672_1000.csv
+    jobid: 78
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Kmeans/Spanve/151672_1000.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Kmeans/Spanve/151672_1000.csv
+    wildcards: svg_method=Spanve, dataset=151672, n_genes=1000
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_svg
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Thu Jun 27 15:46:20 2024]
+Finished job 89.
+28 of 62 steps (45%) done
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver. Falling back to greedy solver. Run Snakemake with --verbose to see the full solver output for debugging the problem.
+
+[Thu Jun 27 15:46:20 2024]
+rule Kmeans:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151673.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151673_1000.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Kmeans/Spanve/151673_1000.csv
+    jobid: 82
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Kmeans/Spanve/151673_1000.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Kmeans/Spanve/151673_1000.csv
+    wildcards: svg_method=Spanve, dataset=151673, n_genes=1000
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_svg
+[Thu Jun 27 15:46:21 2024]
+Error in rule Leiden:
+    jobid: 22
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151670.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151670_1000.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151670_1000.csv
+    conda-env: zl_leiden
+    shell:
+        python /data/pinello/PROJECTS/2023_03_SVGBenchmarking/scripts/05_snakemake_clustering/clustering_methods/run_Leiden.py --input_data /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151670.h5ad --input_genes /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151670_1000.csv -o /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151670_1000.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver. Falling back to greedy solver. Run Snakemake with --verbose to see the full solver output for debugging the problem.
+
+[Thu Jun 27 15:46:21 2024]
+rule Kmeans:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151671.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151671_1500.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Kmeans/Spanve/151671_1500.csv
+    jobid: 75
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Kmeans/Spanve/151671_1500.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Kmeans/Spanve/151671_1500.csv
+    wildcards: svg_method=Spanve, dataset=151671, n_genes=1500
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_svg
+[Thu Jun 27 15:46:22 2024]
+Finished job 14.
+29 of 62 steps (47%) done
+Select jobs to execute...
+
+[Thu Jun 27 15:46:22 2024]
+rule Kmeans:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151675.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151675_1000.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Kmeans/Spanve/151675_1000.csv
+    jobid: 90
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Kmeans/Spanve/151675_1000.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Kmeans/Spanve/151675_1000.csv
+    wildcards: svg_method=Spanve, dataset=151675, n_genes=1000
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_svg
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Thu Jun 27 15:46:33 2024]
+Finished job 78.
+30 of 62 steps (48%) done
+Select jobs to execute...
+
+[Thu Jun 27 15:46:33 2024]
+rule Leiden:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151676.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151676_1500.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151676_1500.csv
+    jobid: 47
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Leiden/Spanve/151676_1500.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151676_1500.csv
+    wildcards: svg_method=Spanve, dataset=151676, n_genes=1500
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_leiden
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Thu Jun 27 15:46:34 2024]
+Finished job 82.
+31 of 62 steps (50%) done
+Select jobs to execute...
+
+[Thu Jun 27 15:46:34 2024]
+rule Kmeans:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151676.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151676_1000.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Kmeans/Spanve/151676_1000.csv
+    jobid: 94
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Kmeans/Spanve/151676_1000.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Kmeans/Spanve/151676_1000.csv
+    wildcards: svg_method=Spanve, dataset=151676, n_genes=1000
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_svg
+[Thu Jun 27 15:46:34 2024]
+Finished job 40.
+32 of 62 steps (52%) done
+Select jobs to execute...
+
+[Thu Jun 27 15:46:35 2024]
+rule Kmeans:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151669.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151669_2000.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Kmeans/Spanve/151669_2000.csv
+    jobid: 68
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Kmeans/Spanve/151669_2000.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Kmeans/Spanve/151669_2000.csv
+    wildcards: svg_method=Spanve, dataset=151669, n_genes=2000
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_svg
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Thu Jun 27 15:46:35 2024]
+Finished job 75.
+33 of 62 steps (53%) done
+Select jobs to execute...
+
+[Thu Jun 27 15:46:36 2024]
+rule Leiden:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151507.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151507_1000.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151507_1000.csv
+    jobid: 2
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Leiden/Spanve/151507_1000.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151507_1000.csv
+    wildcards: svg_method=Spanve, dataset=151507, n_genes=1000
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_leiden
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Thu Jun 27 15:46:37 2024]
+Finished job 90.
+34 of 62 steps (55%) done
+Select jobs to execute...
+
+[Thu Jun 27 15:46:37 2024]
+rule Leiden:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151509.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151509_1000.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151509_1000.csv
+    jobid: 10
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Leiden/Spanve/151509_1000.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151509_1000.csv
+    wildcards: svg_method=Spanve, dataset=151509, n_genes=1000
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_leiden
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Thu Jun 27 15:46:48 2024]
+Finished job 94.
+35 of 62 steps (56%) done
+Select jobs to execute...
+
+[Thu Jun 27 15:46:48 2024]
+rule Kmeans:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151670.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151670_1000.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Kmeans/Spanve/151670_1000.csv
+    jobid: 70
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Kmeans/Spanve/151670_1000.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Kmeans/Spanve/151670_1000.csv
+    wildcards: svg_method=Spanve, dataset=151670, n_genes=1000
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_svg
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Thu Jun 27 15:46:49 2024]
+Finished job 68.
+36 of 62 steps (58%) done
+Select jobs to execute...
+
+[Thu Jun 27 15:46:49 2024]
+rule Kmeans:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151672.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151672_1500.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Kmeans/Spanve/151672_1500.csv
+    jobid: 79
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Kmeans/Spanve/151672_1500.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Kmeans/Spanve/151672_1500.csv
+    wildcards: svg_method=Spanve, dataset=151672, n_genes=1500
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_svg
+[Thu Jun 27 15:46:49 2024]
+Finished job 47.
+37 of 62 steps (60%) done
+Select jobs to execute...
+
+[Thu Jun 27 15:46:50 2024]
+rule Leiden:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151672.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151672_1000.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151672_1000.csv
+    jobid: 30
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Leiden/Spanve/151672_1000.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151672_1000.csv
+    wildcards: svg_method=Spanve, dataset=151672, n_genes=1000
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_leiden
+[Thu Jun 27 15:46:51 2024]
+Error in rule Leiden:
+    jobid: 10
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151509.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151509_1000.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151509_1000.csv
+    conda-env: zl_leiden
+    shell:
+        python /data/pinello/PROJECTS/2023_03_SVGBenchmarking/scripts/05_snakemake_clustering/clustering_methods/run_Leiden.py --input_data /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151509.h5ad --input_genes /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151509_1000.csv -o /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151509_1000.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Select jobs to execute...
+
+[Thu Jun 27 15:46:51 2024]
+rule Leiden:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151675.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151675_500.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151675_500.csv
+    jobid: 41
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Leiden/Spanve/151675_500.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151675_500.csv
+    wildcards: svg_method=Spanve, dataset=151675, n_genes=500
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_leiden
+[Thu Jun 27 15:46:53 2024]
+Finished job 2.
+38 of 62 steps (61%) done
+Select jobs to execute...
+
+[Thu Jun 27 15:46:53 2024]
+rule Leiden:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151676.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151676_2000.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151676_2000.csv
+    jobid: 48
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Leiden/Spanve/151676_2000.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151676_2000.csv
+    wildcards: svg_method=Spanve, dataset=151676, n_genes=2000
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_leiden
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Thu Jun 27 15:47:02 2024]
+Finished job 70.
+39 of 62 steps (63%) done
+Select jobs to execute...
+
+[Thu Jun 27 15:47:03 2024]
+rule Leiden:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151508.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151508_1500.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151508_1500.csv
+    jobid: 7
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Leiden/Spanve/151508_1500.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151508_1500.csv
+    wildcards: svg_method=Spanve, dataset=151508, n_genes=1500
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_leiden
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Thu Jun 27 15:47:05 2024]
+Finished job 79.
+40 of 62 steps (65%) done
+Select jobs to execute...
+
+[Thu Jun 27 15:47:05 2024]
+rule Leiden:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151509.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151509_2000.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151509_2000.csv
+    jobid: 12
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Leiden/Spanve/151509_2000.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151509_2000.csv
+    wildcards: svg_method=Spanve, dataset=151509, n_genes=2000
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_leiden
+[Thu Jun 27 15:47:06 2024]
+Finished job 30.
+41 of 62 steps (66%) done
+Select jobs to execute...
+
+[Thu Jun 27 15:47:06 2024]
+rule Kmeans:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151669.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151669_1500.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Kmeans/Spanve/151669_1500.csv
+    jobid: 67
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/benchmark/clustering/Kmeans/Spanve/151669_1500.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Kmeans/Spanve/151669_1500.csv
+    wildcards: svg_method=Spanve, dataset=151669, n_genes=1500
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: zl_svg
+[Thu Jun 27 15:47:07 2024]
+Error in rule Leiden:
+    jobid: 41
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151675.h5ad, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151675_500.csv
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151675_500.csv
+    conda-env: zl_leiden
+    shell:
+        python /data/pinello/PROJECTS/2023_03_SVGBenchmarking/scripts/05_snakemake_clustering/clustering_methods/run_Leiden.py --input_data /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/data/151675.h5ad --input_genes /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/02_get_genes/Spanve/151675_500.csv -o /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/Leiden/Spanve/151675_500.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Jun 27 15:47:10 2024]
+Finished job 48.
+42 of 62 steps (68%) done
+[Thu Jun 27 15:47:19 2024]
+Finished job 7.
+43 of 62 steps (69%) done
+Benchmark: unable to collect cpu and memory benchmark statistics
+[Thu Jun 27 15:47:22 2024]
+Finished job 67.
+44 of 62 steps (71%) done
+[Thu Jun 27 15:47:23 2024]
+Finished job 12.
+45 of 62 steps (73%) done
+[Thu Jun 27 16:10:27 2024]
+Finished job 143.
+46 of 62 steps (74%) done
+[Thu Jun 27 16:10:35 2024]
+Finished job 144.
+47 of 62 steps (76%) done
+[Thu Jun 27 16:12:18 2024]
+Finished job 139.
+48 of 62 steps (77%) done
+[Thu Jun 27 16:12:18 2024]
+Finished job 136.
+49 of 62 steps (79%) done
+[Thu Jun 27 16:15:16 2024]
+Finished job 122.
+50 of 62 steps (81%) done
+[Thu Jun 27 16:15:18 2024]
+Finished job 123.
+51 of 62 steps (82%) done
+[Thu Jun 27 16:19:25 2024]
+Finished job 110.
+52 of 62 steps (84%) done
+[Thu Jun 27 16:19:43 2024]
+Finished job 109.
+53 of 62 steps (85%) done
+[Thu Jun 27 16:20:56 2024]
+Finished job 107.
+54 of 62 steps (87%) done
+[Thu Jun 27 16:21:10 2024]
+Finished job 106.
+55 of 62 steps (89%) done
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-06-27T154333.866278.snakemake.log

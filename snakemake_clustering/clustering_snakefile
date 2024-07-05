@@ -1,0 +1,27 @@
+from snakemake.utils import min_version
+
+##### set minimum snakemake version #####
+min_version("6.4.1")
+
+include: "clustering_rules/Leiden.smk"
+include: "clustering_rules/Kmeans.smk"
+include: "clustering_rules/BayesSpace.smk"
+include: "clustering_rules/Banksy.smk"
+
+clustering_method_list = ['Leiden', 'Kmeans', 'BayesSpace', 'Banksy']
+               
+dataset_list = ['151507', '151508', '151509', '151510', '151669', '151670', 
+                '151671', '151672', '151673', '151674', '151675', '151676']
+             
+svg_method_list = ['nnSVG', 'Spanve',  'SPARK-X', 'SPARK', 'SpatialDE2',
+                   'SpatialDE', 'SOMDE', 'MoranI', 'scGCO', 'SpaGCN',
+                   'SpaGFT', 'Sepal', 'HVG', 'BOOST-GP', 'GPcounts'] 
+                   
+# clustering_method_list = ['Banksy']
+# dataset_list = ['151507']
+svg_method_list = ['Spanve']
+n_genes_list = [500, 1000, 1500, 2000]       
+       
+rule all:
+    input:
+      expand("/data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/05_snakemake_clustering/output/clustering/{clustering_method}/{svg_method}/{dataset}_{n_genes}.csv",clustering_method=clustering_method_list, svg_method=svg_method_list, dataset=dataset_list, n_genes=n_genes_list)
