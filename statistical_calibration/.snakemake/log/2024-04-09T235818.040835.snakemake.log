@@ -1,0 +1,203 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 10
+Rules claiming more threads will be scaled down.
+Job stats:
+job          count
+---------  -------
+MoranI           1
+SOMDE            1
+SPARK            1
+SPARKX           1
+SpaGCN           1
+SpaGFT           1
+Spanve           1
+SpatialDE        1
+all              1
+nnSVG            1
+scGCO            1
+total           11
+
+Select jobs to execute...
+
+[Tue Apr  9 23:58:24 2024]
+rule Spanve:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/32_10x_Xenium_Human_Colon_Cancer.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/Spanve/32_10x_Xenium_Human_Colon_Cancer.csv
+    jobid: 2
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/benchmark/Spanve/32_10x_Xenium_Human_Colon_Cancer.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/Spanve/32_10x_Xenium_Human_Colon_Cancer.csv
+    wildcards: dataset=32_10x_Xenium_Human_Colon_Cancer
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: zl_Spanve
+[Tue Apr  9 23:59:03 2024]
+Finished job 2.
+1 of 11 steps (9%) done
+Select jobs to execute...
+
+[Tue Apr  9 23:59:03 2024]
+rule SpaGFT:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/32_10x_Xenium_Human_Colon_Cancer.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SpaGFT/32_10x_Xenium_Human_Colon_Cancer.csv
+    jobid: 10
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/benchmark/SpaGFT/32_10x_Xenium_Human_Colon_Cancer.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SpaGFT/32_10x_Xenium_Human_Colon_Cancer.csv
+    wildcards: dataset=32_10x_Xenium_Human_Colon_Cancer
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: zl_SpaGFT
+[Tue Apr  9 23:59:51 2024]
+Finished job 10.
+2 of 11 steps (18%) done
+Select jobs to execute...
+
+[Tue Apr  9 23:59:51 2024]
+rule scGCO:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/32_10x_Xenium_Human_Colon_Cancer.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/scGCO/32_10x_Xenium_Human_Colon_Cancer.csv
+    jobid: 8
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/benchmark/scGCO/32_10x_Xenium_Human_Colon_Cancer.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/scGCO/32_10x_Xenium_Human_Colon_Cancer.csv
+    wildcards: dataset=32_10x_Xenium_Human_Colon_Cancer
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: scGCO
+[Wed Apr 10 00:06:46 2024]
+Finished job 8.
+3 of 11 steps (27%) done
+Select jobs to execute...
+
+[Wed Apr 10 00:06:46 2024]
+rule SOMDE:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/32_10x_Xenium_Human_Colon_Cancer.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SOMDE/32_10x_Xenium_Human_Colon_Cancer.csv
+    jobid: 6
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/benchmark/SOMDE/32_10x_Xenium_Human_Colon_Cancer.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SOMDE/32_10x_Xenium_Human_Colon_Cancer.csv
+    wildcards: dataset=32_10x_Xenium_Human_Colon_Cancer
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: zl_SOMDE
+[Wed Apr 10 00:08:12 2024]
+Finished job 6.
+4 of 11 steps (36%) done
+Select jobs to execute...
+
+[Wed Apr 10 00:08:12 2024]
+rule SPARKX:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/32_10x_Xenium_Human_Colon_Cancer.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SPARK-X/32_10x_Xenium_Human_Colon_Cancer.csv
+    jobid: 3
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/benchmark/SPARKX/32_10x_Xenium_Human_Colon_Cancer.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SPARK-X/32_10x_Xenium_Human_Colon_Cancer.csv
+    wildcards: dataset=32_10x_Xenium_Human_Colon_Cancer
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: zl_SPARKX
+[Wed Apr 10 00:08:46 2024]
+Finished job 3.
+5 of 11 steps (45%) done
+Select jobs to execute...
+
+[Wed Apr 10 00:08:46 2024]
+rule nnSVG:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/32_10x_Xenium_Human_Colon_Cancer.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/nnSVG/32_10x_Xenium_Human_Colon_Cancer.csv
+    jobid: 1
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/benchmark/nnSVG/32_10x_Xenium_Human_Colon_Cancer.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/nnSVG/32_10x_Xenium_Human_Colon_Cancer.csv
+    wildcards: dataset=32_10x_Xenium_Human_Colon_Cancer
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: zl_nnSVG
+[Wed Apr 10 00:21:07 2024]
+Finished job 1.
+6 of 11 steps (55%) done
+Select jobs to execute...
+
+[Wed Apr 10 00:21:07 2024]
+rule SpaGCN:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/32_10x_Xenium_Human_Colon_Cancer.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SpaGCN/32_10x_Xenium_Human_Colon_Cancer.csv
+    jobid: 9
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/benchmark/SpaGCN/32_10x_Xenium_Human_Colon_Cancer.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SpaGCN/32_10x_Xenium_Human_Colon_Cancer.csv
+    wildcards: dataset=32_10x_Xenium_Human_Colon_Cancer
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: zl_SpaGCN
+[Wed Apr 10 00:23:01 2024]
+Finished job 9.
+7 of 11 steps (64%) done
+Select jobs to execute...
+
+[Wed Apr 10 00:23:01 2024]
+rule MoranI:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/32_10x_Xenium_Human_Colon_Cancer.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/MoranI/32_10x_Xenium_Human_Colon_Cancer.csv
+    jobid: 7
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/benchmark/MoranI/32_10x_Xenium_Human_Colon_Cancer.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/MoranI/32_10x_Xenium_Human_Colon_Cancer.csv
+    wildcards: dataset=32_10x_Xenium_Human_Colon_Cancer
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: zl_moranI
+[Wed Apr 10 00:23:59 2024]
+Finished job 7.
+8 of 11 steps (73%) done
+Select jobs to execute...
+
+[Wed Apr 10 00:23:59 2024]
+rule SPARK:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/32_10x_Xenium_Human_Colon_Cancer.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SPARK/32_10x_Xenium_Human_Colon_Cancer.csv
+    jobid: 4
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/benchmark/SPARK/32_10x_Xenium_Human_Colon_Cancer.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SPARK/32_10x_Xenium_Human_Colon_Cancer.csv
+    wildcards: dataset=32_10x_Xenium_Human_Colon_Cancer
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: zl_SPARK
+[Wed Apr 10 01:36:38 2024]
+Finished job 4.
+9 of 11 steps (82%) done
+Select jobs to execute...
+
+[Wed Apr 10 01:36:38 2024]
+rule SpatialDE:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/32_10x_Xenium_Human_Colon_Cancer.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SpatialDE/32_10x_Xenium_Human_Colon_Cancer.csv
+    jobid: 5
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/benchmark/SpatialDE/32_10x_Xenium_Human_Colon_Cancer.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SpatialDE/32_10x_Xenium_Human_Colon_Cancer.csv
+    wildcards: dataset=32_10x_Xenium_Human_Colon_Cancer
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: zl_spatialDE
+[Wed Apr 10 01:45:12 2024]
+Finished job 5.
+10 of 11 steps (91%) done
+Select jobs to execute...
+
+[Wed Apr 10 01:45:12 2024]
+localrule all:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/nnSVG/32_10x_Xenium_Human_Colon_Cancer.csv, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/Spanve/32_10x_Xenium_Human_Colon_Cancer.csv, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SPARK-X/32_10x_Xenium_Human_Colon_Cancer.csv, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SPARK/32_10x_Xenium_Human_Colon_Cancer.csv, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SpatialDE/32_10x_Xenium_Human_Colon_Cancer.csv, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SOMDE/32_10x_Xenium_Human_Colon_Cancer.csv, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/MoranI/32_10x_Xenium_Human_Colon_Cancer.csv, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/scGCO/32_10x_Xenium_Human_Colon_Cancer.csv, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SpaGCN/32_10x_Xenium_Human_Colon_Cancer.csv, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SpaGFT/32_10x_Xenium_Human_Colon_Cancer.csv
+    jobid: 0
+    reason: Input files updated by another job: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/MoranI/32_10x_Xenium_Human_Colon_Cancer.csv, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/scGCO/32_10x_Xenium_Human_Colon_Cancer.csv, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/nnSVG/32_10x_Xenium_Human_Colon_Cancer.csv, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/Spanve/32_10x_Xenium_Human_Colon_Cancer.csv, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SpaGCN/32_10x_Xenium_Human_Colon_Cancer.csv, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SpaGFT/32_10x_Xenium_Human_Colon_Cancer.csv, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SPARK/32_10x_Xenium_Human_Colon_Cancer.csv, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SOMDE/32_10x_Xenium_Human_Colon_Cancer.csv, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SPARK-X/32_10x_Xenium_Human_Colon_Cancer.csv, /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SpatialDE/32_10x_Xenium_Human_Colon_Cancer.csv
+    resources: tmpdir=/tmp
+
+[Wed Apr 10 01:45:12 2024]
+Finished job 0.
+11 of 11 steps (100%) done
+Complete log: .snakemake/log/2024-04-09T235818.040835.snakemake.log

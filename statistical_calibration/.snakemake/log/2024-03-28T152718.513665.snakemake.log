@@ -1,0 +1,235 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 10
+Rules claiming more threads will be scaled down.
+Job stats:
+job           count
+----------  -------
+MoranI            1
+SOMDE             1
+SPARK             1
+SPARKX            1
+Sepal             1
+SpaGCN            1
+SpaGFT            1
+Spanve            1
+SpatialDE         1
+SpatialDE2        1
+all               1
+nnSVG             1
+scGCO             1
+total            13
+
+Select jobs to execute...
+
+[Thu Mar 28 15:27:22 2024]
+rule SpatialDE:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/01_10x_Visium_mouse_brain.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SpatialDE/01_10x_Visium_mouse_brain.csv
+    jobid: 6
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/benchmark/SpatialDE/01_10x_Visium_mouse_brain.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SpatialDE/01_10x_Visium_mouse_brain.csv
+    wildcards: dataset=01_10x_Visium_mouse_brain
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: zl_spatialDE
+[Thu Mar 28 15:30:08 2024]
+Finished job 6.
+1 of 13 steps (8%) done
+Select jobs to execute...
+
+[Thu Mar 28 15:30:08 2024]
+rule MoranI:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/01_10x_Visium_mouse_brain.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/MoranI/01_10x_Visium_mouse_brain.csv
+    jobid: 8
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/benchmark/MoranI/01_10x_Visium_mouse_brain.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/MoranI/01_10x_Visium_mouse_brain.csv
+    wildcards: dataset=01_10x_Visium_mouse_brain
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: zl_moranI
+[Thu Mar 28 15:30:54 2024]
+Finished job 8.
+2 of 13 steps (15%) done
+Select jobs to execute...
+
+[Thu Mar 28 15:30:54 2024]
+rule Spanve:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/01_10x_Visium_mouse_brain.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/Spanve/01_10x_Visium_mouse_brain.csv
+    jobid: 2
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/benchmark/Spanve/01_10x_Visium_mouse_brain.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/Spanve/01_10x_Visium_mouse_brain.csv
+    wildcards: dataset=01_10x_Visium_mouse_brain
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: zl_Spanve
+[Thu Mar 28 15:31:35 2024]
+Finished job 2.
+3 of 13 steps (23%) done
+Select jobs to execute...
+
+[Thu Mar 28 15:31:35 2024]
+rule SpaGCN:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/01_10x_Visium_mouse_brain.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SpaGCN/01_10x_Visium_mouse_brain.csv
+    jobid: 10
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/benchmark/SpaGCN/01_10x_Visium_mouse_brain.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SpaGCN/01_10x_Visium_mouse_brain.csv
+    wildcards: dataset=01_10x_Visium_mouse_brain
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: zl_SpaGCN
+[Thu Mar 28 15:32:29 2024]
+Error in rule SpaGCN:
+    jobid: 10
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/01_10x_Visium_mouse_brain.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SpaGCN/01_10x_Visium_mouse_brain.csv
+    conda-env: zl_SpaGCN
+    shell:
+        python /data/pinello/PROJECTS/2023_03_SVGBenchmarking/scripts/04_statistical_calibration/methods/run_SpaGCN.py -i /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/01_10x_Visium_mouse_brain.h5ad -o /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SpaGCN/01_10x_Visium_mouse_brain.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Select jobs to execute...
+
+[Thu Mar 28 15:32:29 2024]
+rule SPARKX:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/01_10x_Visium_mouse_brain.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SPARK-X/01_10x_Visium_mouse_brain.csv
+    jobid: 3
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/benchmark/SPARKX/01_10x_Visium_mouse_brain.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SPARK-X/01_10x_Visium_mouse_brain.csv
+    wildcards: dataset=01_10x_Visium_mouse_brain
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: zl_SPARKX
+[Thu Mar 28 15:33:01 2024]
+Finished job 3.
+4 of 13 steps (31%) done
+Select jobs to execute...
+
+[Thu Mar 28 15:33:01 2024]
+rule nnSVG:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/01_10x_Visium_mouse_brain.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/nnSVG/01_10x_Visium_mouse_brain.csv
+    jobid: 1
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/benchmark/nnSVG/01_10x_Visium_mouse_brain.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/nnSVG/01_10x_Visium_mouse_brain.csv
+    wildcards: dataset=01_10x_Visium_mouse_brain
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: zl_nnSVG
+[Thu Mar 28 15:41:16 2024]
+Finished job 1.
+5 of 13 steps (38%) done
+Select jobs to execute...
+
+[Thu Mar 28 15:41:16 2024]
+rule SpaGFT:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/01_10x_Visium_mouse_brain.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SpaGFT/01_10x_Visium_mouse_brain.csv
+    jobid: 11
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/benchmark/SpaGFT/01_10x_Visium_mouse_brain.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SpaGFT/01_10x_Visium_mouse_brain.csv
+    wildcards: dataset=01_10x_Visium_mouse_brain
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: zl_SpaGFT
+[Thu Mar 28 15:41:49 2024]
+Finished job 11.
+6 of 13 steps (46%) done
+Select jobs to execute...
+
+[Thu Mar 28 15:41:50 2024]
+rule scGCO:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/01_10x_Visium_mouse_brain.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/scGCO/01_10x_Visium_mouse_brain.csv
+    jobid: 9
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/benchmark/scGCO/01_10x_Visium_mouse_brain.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/scGCO/01_10x_Visium_mouse_brain.csv
+    wildcards: dataset=01_10x_Visium_mouse_brain
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: scGCO
+[Thu Mar 28 15:45:38 2024]
+Finished job 9.
+7 of 13 steps (54%) done
+Select jobs to execute...
+
+[Thu Mar 28 15:45:38 2024]
+rule SOMDE:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/01_10x_Visium_mouse_brain.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SOMDE/01_10x_Visium_mouse_brain.csv
+    jobid: 7
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/benchmark/SOMDE/01_10x_Visium_mouse_brain.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SOMDE/01_10x_Visium_mouse_brain.csv
+    wildcards: dataset=01_10x_Visium_mouse_brain
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: zl_SOMDE
+[Thu Mar 28 15:47:06 2024]
+Finished job 7.
+8 of 13 steps (62%) done
+Select jobs to execute...
+
+[Thu Mar 28 15:47:06 2024]
+rule SpatialDE2:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/01_10x_Visium_mouse_brain.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SpatialDE2/01_10x_Visium_mouse_brain.csv
+    jobid: 5
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/benchmark/SpatialDE2/01_10x_Visium_mouse_brain.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SpatialDE2/01_10x_Visium_mouse_brain.csv
+    wildcards: dataset=01_10x_Visium_mouse_brain
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: zl_spatialDE2
+[Thu Mar 28 15:51:31 2024]
+Finished job 5.
+9 of 13 steps (69%) done
+Select jobs to execute...
+
+[Thu Mar 28 15:51:31 2024]
+rule SPARK:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/01_10x_Visium_mouse_brain.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SPARK/01_10x_Visium_mouse_brain.csv
+    jobid: 4
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/benchmark/SPARK/01_10x_Visium_mouse_brain.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SPARK/01_10x_Visium_mouse_brain.csv
+    wildcards: dataset=01_10x_Visium_mouse_brain
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: zl_SPARK
+[Thu Mar 28 16:20:27 2024]
+Finished job 4.
+10 of 13 steps (77%) done
+Select jobs to execute...
+
+[Thu Mar 28 16:20:27 2024]
+rule Sepal:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/01_10x_Visium_mouse_brain.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/Sepal/01_10x_Visium_mouse_brain.csv
+    jobid: 12
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/benchmark/Sepal/01_10x_Visium_mouse_brain.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/Sepal/01_10x_Visium_mouse_brain.csv
+    wildcards: dataset=01_10x_Visium_mouse_brain
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: zl_sepal
+[Thu Mar 28 16:22:42 2024]
+Finished job 12.
+11 of 13 steps (85%) done
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-03-28T152718.513665.snakemake.log

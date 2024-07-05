@@ -1,0 +1,215 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 10
+Rules claiming more threads will be scaled down.
+Job stats:
+job           count
+----------  -------
+BOOSTGP           1
+GPcounts          1
+MoranI            1
+SOMDE             1
+SPARK             1
+SPARKX            1
+Sepal             1
+SpaGCN            1
+SpaGFT            1
+Spanve            1
+SpatialDE         1
+SpatialDE2        1
+all               1
+nnSVG             1
+scGCO             1
+total            15
+
+Select jobs to execute...
+
+[Thu Mar 28 17:14:21 2024]
+rule SpaGCN:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/06_10x_Visium_Mouse_Olfactory_Bulb.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SpaGCN/06_10x_Visium_Mouse_Olfactory_Bulb.csv
+    jobid: 10
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/benchmark/SpaGCN/06_10x_Visium_Mouse_Olfactory_Bulb.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SpaGCN/06_10x_Visium_Mouse_Olfactory_Bulb.csv
+    wildcards: dataset=06_10x_Visium_Mouse_Olfactory_Bulb
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: zl_SpaGCN
+[Thu Mar 28 17:14:48 2024]
+Finished job 10.
+1 of 15 steps (7%) done
+Select jobs to execute...
+
+[Thu Mar 28 17:14:48 2024]
+rule SPARKX:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/06_10x_Visium_Mouse_Olfactory_Bulb.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SPARK-X/06_10x_Visium_Mouse_Olfactory_Bulb.csv
+    jobid: 3
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/benchmark/SPARKX/06_10x_Visium_Mouse_Olfactory_Bulb.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SPARK-X/06_10x_Visium_Mouse_Olfactory_Bulb.csv
+    wildcards: dataset=06_10x_Visium_Mouse_Olfactory_Bulb
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: zl_SPARKX
+[Thu Mar 28 17:15:06 2024]
+Finished job 3.
+2 of 15 steps (13%) done
+Select jobs to execute...
+
+[Thu Mar 28 17:15:06 2024]
+rule SpatialDE:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/06_10x_Visium_Mouse_Olfactory_Bulb.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SpatialDE/06_10x_Visium_Mouse_Olfactory_Bulb.csv
+    jobid: 6
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/benchmark/SpatialDE/06_10x_Visium_Mouse_Olfactory_Bulb.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SpatialDE/06_10x_Visium_Mouse_Olfactory_Bulb.csv
+    wildcards: dataset=06_10x_Visium_Mouse_Olfactory_Bulb
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: zl_spatialDE
+[Thu Mar 28 17:16:43 2024]
+Finished job 6.
+3 of 15 steps (20%) done
+Select jobs to execute...
+
+[Thu Mar 28 17:16:44 2024]
+rule MoranI:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/06_10x_Visium_Mouse_Olfactory_Bulb.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/MoranI/06_10x_Visium_Mouse_Olfactory_Bulb.csv
+    jobid: 8
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/benchmark/MoranI/06_10x_Visium_Mouse_Olfactory_Bulb.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/MoranI/06_10x_Visium_Mouse_Olfactory_Bulb.csv
+    wildcards: dataset=06_10x_Visium_Mouse_Olfactory_Bulb
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: zl_moranI
+[Thu Mar 28 17:17:04 2024]
+Finished job 8.
+4 of 15 steps (27%) done
+Select jobs to execute...
+
+[Thu Mar 28 17:17:04 2024]
+rule Spanve:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/06_10x_Visium_Mouse_Olfactory_Bulb.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/Spanve/06_10x_Visium_Mouse_Olfactory_Bulb.csv
+    jobid: 2
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/benchmark/Spanve/06_10x_Visium_Mouse_Olfactory_Bulb.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/Spanve/06_10x_Visium_Mouse_Olfactory_Bulb.csv
+    wildcards: dataset=06_10x_Visium_Mouse_Olfactory_Bulb
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: zl_Spanve
+[Thu Mar 28 17:17:20 2024]
+Finished job 2.
+5 of 15 steps (33%) done
+Select jobs to execute...
+
+[Thu Mar 28 17:17:21 2024]
+rule nnSVG:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/06_10x_Visium_Mouse_Olfactory_Bulb.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/nnSVG/06_10x_Visium_Mouse_Olfactory_Bulb.csv
+    jobid: 1
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/benchmark/nnSVG/06_10x_Visium_Mouse_Olfactory_Bulb.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/nnSVG/06_10x_Visium_Mouse_Olfactory_Bulb.csv
+    wildcards: dataset=06_10x_Visium_Mouse_Olfactory_Bulb
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: zl_nnSVG
+[Thu Mar 28 17:23:23 2024]
+Finished job 1.
+6 of 15 steps (40%) done
+Select jobs to execute...
+
+[Thu Mar 28 17:23:23 2024]
+rule GPcounts:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/06_10x_Visium_Mouse_Olfactory_Bulb.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/GPcounts/06_10x_Visium_Mouse_Olfactory_Bulb.csv
+    jobid: 13
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/benchmark/GPcounts/06_10x_Visium_Mouse_Olfactory_Bulb.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/GPcounts/06_10x_Visium_Mouse_Olfactory_Bulb.csv
+    wildcards: dataset=06_10x_Visium_Mouse_Olfactory_Bulb
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: GPcounts-GPU
+[Thu Mar 28 17:24:09 2024]
+Error in rule GPcounts:
+    jobid: 13
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/06_10x_Visium_Mouse_Olfactory_Bulb.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/GPcounts/06_10x_Visium_Mouse_Olfactory_Bulb.csv
+    conda-env: GPcounts-GPU
+    shell:
+        python /data/pinello/PROJECTS/2023_03_SVGBenchmarking/scripts/04_statistical_calibration/methods/run_GPcounts.py -i /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/06_10x_Visium_Mouse_Olfactory_Bulb.h5ad -o /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/GPcounts/06_10x_Visium_Mouse_Olfactory_Bulb.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Select jobs to execute...
+
+[Thu Mar 28 17:24:09 2024]
+rule SpaGFT:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/06_10x_Visium_Mouse_Olfactory_Bulb.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SpaGFT/06_10x_Visium_Mouse_Olfactory_Bulb.csv
+    jobid: 11
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/benchmark/SpaGFT/06_10x_Visium_Mouse_Olfactory_Bulb.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SpaGFT/06_10x_Visium_Mouse_Olfactory_Bulb.csv
+    wildcards: dataset=06_10x_Visium_Mouse_Olfactory_Bulb
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: zl_SpaGFT
+[Thu Mar 28 17:24:18 2024]
+Finished job 11.
+7 of 15 steps (47%) done
+Select jobs to execute...
+
+[Thu Mar 28 17:24:18 2024]
+rule scGCO:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/06_10x_Visium_Mouse_Olfactory_Bulb.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/scGCO/06_10x_Visium_Mouse_Olfactory_Bulb.csv
+    jobid: 9
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/benchmark/scGCO/06_10x_Visium_Mouse_Olfactory_Bulb.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/scGCO/06_10x_Visium_Mouse_Olfactory_Bulb.csv
+    wildcards: dataset=06_10x_Visium_Mouse_Olfactory_Bulb
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: scGCO
+[Thu Mar 28 17:26:57 2024]
+Finished job 9.
+8 of 15 steps (53%) done
+Select jobs to execute...
+
+[Thu Mar 28 17:26:57 2024]
+rule SOMDE:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/06_10x_Visium_Mouse_Olfactory_Bulb.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SOMDE/06_10x_Visium_Mouse_Olfactory_Bulb.csv
+    jobid: 7
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/benchmark/SOMDE/06_10x_Visium_Mouse_Olfactory_Bulb.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SOMDE/06_10x_Visium_Mouse_Olfactory_Bulb.csv
+    wildcards: dataset=06_10x_Visium_Mouse_Olfactory_Bulb
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: zl_SOMDE
+[Thu Mar 28 17:28:10 2024]
+Finished job 7.
+9 of 15 steps (60%) done
+Select jobs to execute...
+
+[Thu Mar 28 17:28:10 2024]
+rule BOOSTGP:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/06_10x_Visium_Mouse_Olfactory_Bulb.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/BOOST-GP/06_10x_Visium_Mouse_Olfactory_Bulb.csv
+    jobid: 14
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/benchmark/BOOST-GP/06_10x_Visium_Mouse_Olfactory_Bulb.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/BOOST-GP/06_10x_Visium_Mouse_Olfactory_Bulb.csv
+    wildcards: dataset=06_10x_Visium_Mouse_Olfactory_Bulb
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: zl_BOOST-GP

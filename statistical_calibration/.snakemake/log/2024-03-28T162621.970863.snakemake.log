@@ -1,0 +1,37 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 10
+Rules claiming more threads will be scaled down.
+Job stats:
+job       count
+------  -------
+SpaGCN        1
+all           1
+total         2
+
+Select jobs to execute...
+
+[Thu Mar 28 16:26:41 2024]
+rule SpaGCN:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/01_10x_Visium_mouse_brain.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SpaGCN/01_10x_Visium_mouse_brain.csv
+    jobid: 10
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/benchmark/SpaGCN/01_10x_Visium_mouse_brain.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SpaGCN/01_10x_Visium_mouse_brain.csv
+    wildcards: dataset=01_10x_Visium_mouse_brain
+    threads: 10
+    resources: tmpdir=/tmp
+
+Activating conda environment: zl_SpaGCN
+[Thu Mar 28 16:27:06 2024]
+Error in rule SpaGCN:
+    jobid: 10
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/01_10x_Visium_mouse_brain.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SpaGCN/01_10x_Visium_mouse_brain.csv
+    conda-env: zl_SpaGCN
+    shell:
+        python /data/pinello/PROJECTS/2023_03_SVGBenchmarking/scripts/04_statistical_calibration/methods/run_SpaGCN.py -i /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/01_10x_Visium_mouse_brain.h5ad -o /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/SpaGCN/01_10x_Visium_mouse_brain.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-03-28T162621.970863.snakemake.log

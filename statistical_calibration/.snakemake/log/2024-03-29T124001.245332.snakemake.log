@@ -1,0 +1,41 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 100
+Rules claiming more threads will be scaled down.
+Job stats:
+job        count
+-------  -------
+BOOSTGP        1
+all            1
+total          2
+
+Select jobs to execute...
+
+[Fri Mar 29 12:40:03 2024]
+rule BOOSTGP:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/06_10x_Visium_Mouse_Olfactory_Bulb.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/BOOST-GP/06_10x_Visium_Mouse_Olfactory_Bulb.csv
+    jobid: 1
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/benchmark/BOOST-GP/06_10x_Visium_Mouse_Olfactory_Bulb.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/BOOST-GP/06_10x_Visium_Mouse_Olfactory_Bulb.csv
+    wildcards: dataset=06_10x_Visium_Mouse_Olfactory_Bulb
+    threads: 100
+    resources: tmpdir=/tmp
+
+Activating conda environment: zl_BOOST-GP
+[Fri Mar 29 15:50:49 2024]
+Finished job 1.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Fri Mar 29 15:50:49 2024]
+localrule all:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/BOOST-GP/06_10x_Visium_Mouse_Olfactory_Bulb.csv
+    jobid: 0
+    reason: Input files updated by another job: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/BOOST-GP/06_10x_Visium_Mouse_Olfactory_Bulb.csv
+    resources: tmpdir=/tmp
+
+[Fri Mar 29 15:50:49 2024]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: .snakemake/log/2024-03-29T124001.245332.snakemake.log

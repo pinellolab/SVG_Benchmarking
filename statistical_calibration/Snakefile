@@ -1,0 +1,33 @@
+from snakemake.utils import min_version
+
+##### set minimum snakemake version #####
+min_version("6.4.1")
+
+include: "rules/nnSVG.smk"
+include: "rules/Spanve.smk"
+include: "rules/SPARKX.smk"
+include: "rules/SPARK.smk"
+include: "rules/SpatialDE2.smk"
+include: "rules/SpatialDE.smk"
+include: "rules/SOMDE.smk"
+include: "rules/MoranI.smk"
+include: "rules/scGCO.smk"
+include: "rules/SpaGCN.smk"
+include: "rules/SpaGFT.smk"
+include: "rules/GPcounts.smk"
+include: "rules/Sepal.smk"
+include: "rules/BOOST-GP.smk"
+
+method_list = ['nnSVG', 'Spanve',  'SPARK-X', 'SPARK',
+               'SpatialDE', 'SOMDE', 'MoranI', 'scGCO', 'SpaGCN',
+               'SpaGFT']
+               
+method_list = ['GPcounts', 'BOOST-GP']       
+method_list = ['BOOST-GP']               
+dataset_list = ['06_10x_Visium_Mouse_Olfactory_Bulb']
+dataset_list = ['32_10x_Xenium_Human_Colon_Cancer']
+              
+
+rule all:
+    input:
+        expand("/data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/{method}/{dataset}.csv", method=method_list, dataset=dataset_list)

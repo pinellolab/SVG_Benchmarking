@@ -1,0 +1,56 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 110
+Rules claiming more threads will be scaled down.
+Job stats:
+job         count
+--------  -------
+BOOSTGP         1
+GPcounts        1
+all             1
+total           3
+
+Select jobs to execute...
+
+[Wed May 22 15:05:25 2024]
+rule GPcounts:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/32_10x_Xenium_Human_Colon_Cancer.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/GPcounts/32_10x_Xenium_Human_Colon_Cancer.csv
+    jobid: 1
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/benchmark/GPcounts/32_10x_Xenium_Human_Colon_Cancer.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/GPcounts/32_10x_Xenium_Human_Colon_Cancer.csv
+    wildcards: dataset=32_10x_Xenium_Human_Colon_Cancer
+    threads: 10
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+
+[Wed May 22 15:05:25 2024]
+rule BOOSTGP:
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/32_10x_Xenium_Human_Colon_Cancer.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/BOOST-GP/32_10x_Xenium_Human_Colon_Cancer.csv
+    jobid: 2
+    benchmark: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/benchmark/BOOST-GP/32_10x_Xenium_Human_Colon_Cancer.txt
+    reason: Missing output files: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/BOOST-GP/32_10x_Xenium_Human_Colon_Cancer.csv
+    wildcards: dataset=32_10x_Xenium_Human_Colon_Cancer
+    threads: 100
+    resources: tmpdir=/data/pinello/tmp/zl_tmp
+
+Activating conda environment: GPcounts-GPU
+Activating conda environment: zl_BOOST-GP
+[Thu May 23 05:06:06 2024]
+Finished job 1.
+1 of 3 steps (33%) done
+[Fri May 24 12:19:29 2024]
+Error in rule BOOSTGP:
+    jobid: 2
+    input: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/32_10x_Xenium_Human_Colon_Cancer.h5ad
+    output: /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/BOOST-GP/32_10x_Xenium_Human_Colon_Cancer.csv
+    conda-env: zl_BOOST-GP
+    shell:
+        Rscript /data/pinello/PROJECTS/2023_03_SVGBenchmarking/scripts/04_statistical_calibration/methods/run_BOOST-GP.R -i /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/32_10x_Xenium_Human_Colon_Cancer.h5ad -o /data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/BOOST-GP/32_10x_Xenium_Human_Colon_Cancer.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job BOOSTGP since they might be corrupted:
+/data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/04_statistical_calibration/output/BOOST-GP/32_10x_Xenium_Human_Colon_Cancer.csv
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-05-22T150524.801190.snakemake.log

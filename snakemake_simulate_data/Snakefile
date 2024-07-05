@@ -1,0 +1,86 @@
+from snakemake.utils import min_version
+
+##### set minimum snakemake version #####
+min_version("6.4.1")
+
+include: "rules/nnSVG.smk"
+include: "rules/Spanve.smk"
+include: "rules/SPARKX.smk"
+include: "rules/SPARK.smk"
+include: "rules/SpatialDE2.smk"
+include: "rules/SpatialDE.smk"
+include: "rules/SOMDE.smk"
+include: "rules/MoranI.smk"
+include: "rules/scGCO.smk"
+include: "rules/SpaGCN.smk"
+include: "rules/SpaGFT.smk"
+include: "rules/GPcounts.smk"
+include: "rules/Sepal.smk"
+include: "rules/BOOST-GP.smk"
+
+method_list = ['nnSVG', 'Spanve',  'SPARK-X', 'SPARK', 'SpatialDE2',
+               'SpatialDE', 'SOMDE', 'MoranI', 'scGCO', 'SpaGCN',
+               'SpaGFT', 'GPcounts', 'Sepal', 'BOOST-GP']
+               
+dataset_list = ['01_10x_Visium_mouse_brain',
+                '02_10x_Visium_Human_Heart_MI',
+                '03_10x_Visium_Human_Colorectal_Cancer',
+                '04_10x_Visium_Human_Heart',
+                '05_10x_Visium_Mouse_Embryo',
+                '06_10x_Visium_Mouse_Olfactory_Bulb',
+                '07_10x_Visium_Human_Breast_Cancer',
+                '08_10x_Visium_Human_Lymph_Node',
+                '09_10x_Visium_Human_Prostate',
+                '10_10x_Visium_Human_Prostate_Cancer',
+                '11_10x_Visium_Human_Cerebellum',
+                '12_10x_Visium_Mouse_Kidney',
+                '13_10x_Visium_Human_Lung_Cancer',
+                '14_10x_Visium_Human_Brain_Cancer',
+                '15_10x_Visium_Human_Kidney',
+                '16_10x_Visium_Human_Intestine_Cancer',
+                '17_10x_Visium_Human_Skin_Melanoma',
+                '18_10x_Visium_Human_Cervical_Cancer',
+                '19_10x_Visium_Human_Breast_Cancer',
+                '20_10x_Visium_Human_Heart_MI',
+                '21_slide_seqv2_Mouse_Olfactory_Bulb',
+                '22_slide_seqv2_Mouse_Cortex',
+                '23_slide_seqv2_Mouse_Cerebellum',
+                '24_slide_seqv2_Mouse_Hippocampus',
+                '25_slide_seqv2_Mouse_SomatosensoryCortex',
+                '26_DBiT_seq_E10_brain',
+                '27_DBiT_seq_E10_eye',
+                '28_DBiT_seq_E10_whole',
+                '29_DBiT_seq_E11_lower_body',
+                '30_DBiT_seq_E11_FL_1L',
+                '31_DBiT_seq_E11_FL_2L',
+                '32_10x_Xenium_Human_Colon_Cancer',
+                '33_10x_Xenium_Mouse_Brain',
+                '34_MERFISH_Human_cortex',
+                '35_MERFISH_Human_cortex',
+                '36_MERFISH_Human_cortex',
+                '37_MERFISH_Human_cortex',
+                '38_MERFISH_Mouse_cortex',
+                '39_seqFISH_Mouse_Organogenesis',
+                '40_slide_tag_mouse_embryo',
+                '41_slide_tag_human_cortex',
+                '42_slide_tag_human_skin_melanoma',
+                '43_slide_tag_human_tonsil',
+                '44_stereo_seq_Drosophila_embryo_E7',
+                '45_stereo_seq_Drosophila_embryo_E9.1',
+                '46_stereo_seq_Drosophila_embryo_E6.3',
+                '47_stereo_seq_Drosophila_embryo_E10.5',
+                '48_stereo_seq_Drosophila_embryo_E5.6',
+                '49_STARmap_Wang2018_2D_zstep10_0',
+                '50_STARmap_Wang2018_2D_zstep15_0'
+               ]
+               
+# test
+method_list = ['nnSVG', 'Spanve',  'SPARK-X', 'SPARK', 'SpatialDE2',
+              'SpatialDE', 'SOMDE', 'MoranI', 'scGCO', 'SpaGCN',
+              'SpaGFT', 'Sepal']
+
+method_list = ['Spanve']
+
+rule all:
+    input:
+        expand("/data/pinello/PROJECTS/2023_03_SVGBenchmarking/results/02_snakemake_simulate_data/output/{method}/{dataset}.csv", method=method_list, dataset=dataset_list)
