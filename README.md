@@ -23,7 +23,7 @@ Notebooks for preprocessing and preparing reference datasets from various spatia
 ### `generate_simulate_data/`
 Contains Jupyter notebooks for generating simulated spatial transcriptomics datasets based on real experimental data using [scDesign3](https://github.com/SONGDONGYUAN1994/scDesign3) package. Each notebook corresponds to a specific dataset and technology platform (e.g., 10x Visium mouse brain, human heart, various cancer tissues). The simulated data serves as ground truth for benchmarking SVG detection methods.
 
-The simulated data are provided here for downloading.
+The simulated data are provided [here](https://zenodo.org/records/18193366) for downloading.
 
 ### `snakemake_simulate_data/`
 Snakemake pipelines for large-scale benchmarking of SVG detection methods across simulated spatial transcriptomics datasets. This workflow systematically applies 14 different SVG detection methods to 50 diverse datasets from various spatial genomics technologies.
