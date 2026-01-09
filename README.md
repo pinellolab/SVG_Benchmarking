@@ -150,10 +150,212 @@ To add new SVG detection methods:
 4. Add the method name to `method_list` in `Snakefile` 
 
 ### `spatial_atac/`
-Analysis scripts and workflows specifically for spatial ATAC-seq data, focusing on identifying spatially variable chromatin accessibility peaks.
+Comprehensive analysis workflows for spatial ATAC-seq data, focusing on identifying spatially variable chromatin accessibility peaks (SVPs) across developmental time points. This section extends the SVG benchmarking framework to spatial chromatin accessibility analysis.
+
+**Key Features:**
+- **SVP Detection**: Application of 14 computational methods originally designed for SVG detection to spatial ATAC-seq data
+- **Developmental Analysis**: Focus on mouse embryo development across multiple time points (E12.5, E13.5, E15.5)
+- **Clustering Evaluation**: Comparison of clustering performance using all peaks vs. spatially variable peaks only
+- **Statistical Assessment**: Integration scores (LISI) and clustering quality metrics (CHAOS) for method evaluation
+
+**Workflow Components:**
+
+1. **Peak Extraction** (`01_get_peaks.ipynb`):
+   - Extract top spatially variable peaks from each method's output
+   - Standardize peak ranking across different SVP detection approaches
+   - Generate peak lists for downstream clustering analysis
+
+2. **All Peaks Clustering** (`02_clustering_all_peaks.ipynb`):
+   - Baseline clustering using all chromatin accessibility peaks
+   - TF-IDF normalization and Latent Semantic Indexing (LSI) for dimensionality reduction
+   - Leiden clustering and UMAP visualization
+
+3. **SVP-based Clustering** (`03_clustering_svps.ipynb`):
+   - Clustering analysis restricted to spatially variable peaks identified by each method
+   - Performance comparison with all-peaks clustering
+   - Method-specific clustering quality assessment
+
+4. **Integration Analysis** (`04_LISI.ipynb`):
+   - Local Inverse Simpson Index (LISI) calculation
+   - Evaluation of how well spatial information is preserved in clustering
+
+5. **Clustering Quality** (`05_CHAOS.ipynb`):
+   - CHAOS (Clustering Heterogeneity Analysis of Spatial) scores
+   - Quantitative assessment of spatial clustering coherence
+
+**Supported Datasets:**
+- **E12.5_rep1/rep2**: Early embryonic development (12.5 days post-conception)
+- **E13.5_rep2**: Mid-embryonic development (13.5 days post-conception) 
+- **E15.5_rep1/rep2**: Late embryonic development (15.5 days post-conception)
+
+**Methods Applied:**
+All 14 SVG detection methods from the main workflow are adapted for spatial ATAC-seq analysis:
+- nnSVG, Spanve, SPARK-X, SPARK, SpatialDE2, SpatialDE, SOMDE
+- MoranI, scGCO, SpaGCN, SpaGFT, GPcounts, Sepal, BOOST-GP
+
+**Usage:**
+```bash
+# Run spatial ATAC-seq analysis workflow
+cd spatial_atac/
+snakemake -s 00_spatial_atac.smk --use-conda --cores <n_cores>
+
+# Run individual analysis notebooks
+jupyter notebook 01_get_peaks.ipynb
+```
+
+This framework provides insights into which SVG detection methods are most effective for identifying biologically meaningful spatial patterns in chromatin accessibility data during development.
 
 ### `snakemake_clustering/`
-Snakemake workflows for spatial clustering analysis, including data preparation and clustering evaluation across different methods and parameters.
+Comprehensive evaluation framework for assessing how effectively different SVG detection methods improve spatial clustering performance. This workflow systematically compares spatial clustering algorithms using gene sets identified by various SVG detection methods on real spatial transcriptomics datasets.
+
+**Key Objectives:**
+- **SVG-informed clustering**: Evaluate whether SVG-selected gene sets improve clustering compared to highly variable genes (HVG)
+- **Method comparison**: Compare clustering performance across different SVG detection approaches
+- **Parameter optimization**: Test different numbers of top genes for clustering analysis
+- **Ground truth validation**: Use manually annotated spatial domains from human DLPFC (Dorsolateral Prefrontal Cortex) data
+
+**Workflow Components:**
+
+1. **Data Preparation** (`01_prepare_data.ipynb`):
+   - Process human DLPFC spatial transcriptomics datasets from spatialLIBD
+   - Quality control: filter genes (min 200 cells) and cells (min 200 genes)
+   - Prepare standardized input data for downstream analysis
+
+2. **SVG Gene Selection** (`02_get_genes.ipynb`):
+   - Extract top-ranked genes from each SVG detection method
+   - Standardize gene ranking across different methods
+   - Generate gene lists with varying sizes (500, 1000, 1500, 2000 genes)
+
+3. **Clustering Evaluation** (`03_eva_clustering.ipynb`):
+   - Compute clustering performance metrics (Adjusted Rand Index - ARI)
+   - Compare clustering results against ground truth spatial domains
+   - Generate performance summaries across all method/parameter combinations
+
+4. **Visualization** (`04_viz.ipynb`):
+   - Create comprehensive plots comparing clustering performance
+   - Visualize spatial clustering results overlaid on tissue sections
+   - Generate comparative analysis plots across methods and datasets
+
+**Supported Datasets:**
+12 human DLPFC samples from spatialLIBD project:
+- **Sample IDs**: 151507, 151508, 151509, 151510, 151669, 151670, 151671, 151672, 151673, 151674, 151675, 151676
+- **Ground truth**: Manual annotation of cortical layers and white matter regions
+- **Technology**: 10x Visium spatial transcriptomics
+
+**SVG Detection Methods Evaluated:**
+All 14 methods from the main benchmarking workflow:
+- nnSVG, Spanve, SPARK-X, SPARK, SpatialDE2, SpatialDE, SOMDE
+- MoranI, scGCO, SpaGCN, SpaGFT, GPcounts, Sepal, BOOST-GP
+- **Baseline**: HVG (Highly Variable Genes) for comparison
+
+**Spatial Clustering Algorithms:**
+- **Leiden**: Community detection algorithm for spatial clustering
+- **K-means**: Classic clustering adapted for spatial data
+- **BayesSpace**: Bayesian spatial clustering method
+- **Banksy**: Spatial transcriptomics clustering incorporating neighborhood information
+
+**Usage:**
+
+1. **Run SVG detection**:
+   ```bash
+   cd snakemake_clustering/
+   snakemake -s svg_snakefile --use-conda --cores <n_cores>
+   ```
+
+2. **Run spatial clustering**:
+   ```bash
+   snakemake -s clustering_snakefile --use-conda --cores <n_cores>
+   ```
+
+3. **Analyze results**:
+   ```bash
+   jupyter notebook 03_eva_clustering.ipynb
+   jupyter notebook 04_viz.ipynb
+   ```
+
+**Key Parameters:**
+- **Gene set sizes**: 500, 1000, 1500, 2000 top-ranked SVGs
+- **Clustering resolution**: Optimized for each method
+- **Evaluation metric**: Adjusted Rand Index (ARI) against ground truth
+
+This framework provides quantitative evidence for which SVG detection methods produce gene sets that are most informative for spatial clustering, directly demonstrating the biological relevance of different computational approaches.
 
 ### `statistical_calibration/`
-Methods and scripts for statistical calibration of SVG detection methods, including false discovery rate control and method comparison frameworks.
+Statistical validation framework for assessing the calibration and false discovery rate control of SVG detection methods on real spatial transcriptomics data. This analysis ensures that p-values and statistical tests from different methods are properly calibrated and that claimed significance levels correspond to actual error rates.
+
+**Key Objectives:**
+- **P-value calibration**: Evaluate whether p-values from SVG methods follow expected uniform distribution under null hypothesis
+- **Type I error control**: Assess false positive rates when no spatial signal is expected
+- **Method reliability**: Identify methods with well-calibrated statistical tests
+- **Cross-technology validation**: Test calibration across different spatial genomics platforms
+
+**Statistical Framework:**
+
+**QQ-plot Analysis**: 
+- Quantile-quantile plots comparing observed vs. expected p-value distributions
+- Confidence intervals to assess deviations from uniform distribution
+- Detection of systematic inflation or deflation of p-values
+
+**Null Data Analysis**:
+- Analysis on datasets with minimal expected spatial structure
+- Evaluation of false positive rates under null conditions
+- Assessment of method-specific statistical behavior
+
+**Workflow Components:**
+
+1. **Mouse Olfactory Bulb Analysis** (`01_prepare_data.ipynb`, `02_plot.ipynb`):
+   - **Dataset**: 10x Visium Mouse Olfactory Bulb (`06_10x_Visium_Mouse_Olfactory_Bulb`)
+   - **Preprocessing**: Normalization, log-transformation, gene filtering (min 500 cells)
+   - **Quality control**: Assessment of spatial gene expression patterns
+   - **Statistical analysis**: QQ-plots for p-value calibration assessment
+
+2. **Human Colon Cancer Analysis** (`03_prepare_data.ipynb`, `04_plot.ipynb`):
+   - **Dataset**: 10x Xenium Human Colon Cancer (`32_10x_Xenium_Human_Colon_Cancer`)
+   - **High-resolution validation**: Single-cell resolution spatial data
+   - **Stringent filtering**: Gene filtering with min 2000 cells for robust statistics
+   - **Cross-platform validation**: Xenium vs. Visium technology comparison
+
+**Statistical Validation Methods:**
+
+**QQ-Plot Generation** (`gg_qqplot` function):
+- Creates quantile-quantile plots with 95% confidence intervals
+- Compares observed p-values against uniform distribution expectation
+- Identifies methods with proper statistical calibration
+- Detects systematic biases in statistical testing
+
+**Key Features:**
+- **Confidence intervals**: Account for correlation between tests
+- **Visual diagnostics**: Clear identification of calibration issues
+- **Robust statistics**: Appropriate for genome-wide multiple testing scenarios
+
+**Supported SVG Methods:**
+All 14 methods from the main benchmarking workflow:
+- nnSVG, Spanve, SPARK-X, SPARK, SpatialDE2, SpatialDE, SOMDE
+- MoranI, scGCO, SpaGCN, SpaGFT, GPcounts, Sepal, BOOST-GP
+
+**Usage:**
+
+1. **Run statistical calibration analysis**:
+   ```bash
+   cd statistical_calibration/
+   snakemake --use-conda --cores <n_cores>
+   ```
+
+2. **Generate calibration plots**:
+   ```bash
+   # Mouse Olfactory Bulb
+   jupyter notebook 01_prepare_data.ipynb
+   jupyter notebook 02_plot.ipynb
+   
+   # Human Colon Cancer  
+   jupyter notebook 03_prepare_data.ipynb
+   jupyter notebook 04_plot.ipynb
+   ```
+
+**Expected Outcomes:**
+- **Well-calibrated methods**: P-values follow diagonal line in QQ-plots
+- **Conservative methods**: Points below diagonal (fewer significant results than expected)
+- **Anti-conservative methods**: Points above diagonal (more significant results than expected)
+- **Systematic bias**: Consistent deviations from expected uniform distribution
+
+This validation framework ensures that downstream analyses using these SVG detection methods are based on statistically sound and properly calibrated significance testing.
