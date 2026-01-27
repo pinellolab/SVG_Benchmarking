@@ -149,6 +149,75 @@ To add new SVG detection methods:
 3. Include the new rule in the main `Snakefile`
 4. Add the method name to `method_list` in `Snakefile` 
 
+### `eval_simulate_data/`
+Comprehensive evaluation framework for benchmarking SVG detection methods using results from the `snakemake_simulate_data/` pipeline. These notebooks analyze the performance of 14 different SVG detection methods across multiple spatial transcriptomics datasets and technologies, providing quantitative assessment of method accuracy and reliability.
+
+**Performance Evaluation Components:**
+
+1. **Method Correlation Analysis** (`01_compute_correlation.ipynb`):
+   - Computes Kendall correlation between method-specific SVG scores and ground truth spatial variability 
+   - Evaluates how well each method's ranking correlates with true spatial patterns
+   - Analyzes performance across different spatial technologies (10x Visium, Slide-seq v2, DBiT-seq, etc.)
+   - Generates technology-specific correlation summaries and comparison plots
+
+2. **AUPR Performance Assessment** (`02_compute_aupr.ipynb`):
+   - Calculates Area Under the Precision-Recall (AUPR) curves for each SVG detection method
+   - Uses ground truth spatial variability labels from simulated data as binary classification targets
+   - Evaluates discriminative power of method-specific scores (LR statistics, p-values, etc.)
+   - Provides comprehensive comparison across methods and datasets
+
+3. **Per-Gene Method Correlation** (`03_compute_correlation_per_gene.ipynb`):
+   - Gene-level correlation analysis between method predictions and ground truth spatial variability
+   - Uses proportion of spatial variance (`prop_sv`) instead of test statistics for more precise evaluation
+   - Identifies method performance patterns for specific gene types or expression levels
+   - Enables detailed per-dataset method comparison
+
+4. **Expression Sparsity Analysis** (`04_sparsity.ipynb`):
+   - Analyzes relationship between gene sparsity patterns and method performance
+   - Filters simulated genes (suffix '_1') to focus on method evaluation targets
+   - Calculates quality control metrics for expression data
+   - Examines how dropout rates affect SVG detection accuracy
+
+5. **Spatial Pattern Clustering** (`04_spatial_pattern_clustering.ipynb`, `05_spatial_pattern_clustering.ipynb`):
+   - **Python analysis**: Gene expression correlation patterns and hierarchical clustering
+   - **R analysis**: Advanced visualization using ComplexHeatmap and ggplot2
+   - Evaluates spatial coherence of gene expression patterns in simulated data
+   - Assesses preservation of spatial domains and tissue organization structure
+
+**Supported Technologies:**
+- **10x Visium**: 20 datasets including mouse brain, human heart, various cancer tissues
+- **Slide-seq v2**: 5 mouse tissue datasets (olfactory bulb, cortex, cerebellum, hippocampus, somatosensory cortex)  
+- **DBiT-seq**: 6 embryonic development datasets (E10-E11 timepoints)
+- **Additional platforms**: 10x Xenium, MERFISH, seqFISH, Slide-tags, etc.
+
+**Key Performance Metrics:**
+- **Kendall correlation**: Rank correlation between method scores and ground truth
+- **AUPR scores**: Classification performance for identifying spatially variable genes
+- **Method-specific statistics**: LR_stat (nnSVG), FSV (SpatialDE family), Moran's I, p-values, etc.
+- **Cross-technology validation**: Performance consistency across different spatial platforms
+
+**Output Structure:**
+Results are saved to `../../results/eval_simulate_data/` including:
+- Technology-specific correlation CSV files
+- AUPR performance summaries  
+- Per-gene correlation matrices
+- Sparsity analysis reports
+- Spatial clustering visualizations
+
+**Usage:**
+```bash
+# Ensure SVG method results are available from snakemake pipeline
+cd eval_simulate_data/
+jupyter notebook 01_compute_correlation.ipynb   # Method correlation analysis
+jupyter notebook 02_compute_aupr.ipynb          # AUPR performance assessment  
+jupyter notebook 03_compute_correlation_per_gene.ipynb  # Gene-level analysis
+jupyter notebook 04_sparsity.ipynb              # Sparsity pattern evaluation
+jupyter notebook 04_spatial_pattern_clustering.ipynb   # Python clustering analysis
+jupyter notebook 05_spatial_pattern_clustering.ipynb   # R visualization
+```
+
+This evaluation framework provides comprehensive benchmarking results that identify the most accurate and reliable SVG detection methods across diverse spatial transcriptomics technologies and biological contexts.
+
 ### `spatial_atac/`
 Comprehensive analysis workflows for spatial ATAC-seq data, focusing on identifying spatially variable chromatin accessibility peaks (SVPs) across developmental time points. This section extends the SVG benchmarking framework to spatial chromatin accessibility analysis.
 
